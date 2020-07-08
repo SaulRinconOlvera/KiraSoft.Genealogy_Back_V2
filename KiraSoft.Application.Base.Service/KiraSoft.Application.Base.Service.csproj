@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.Application.Base.ViewModel\KiraSoft.Application.Base.ViewModel.csproj" />
+    <ProjectReference Include="..\KiraSoft.Application.MapperBase\KiraSoft.Application.MapperBase.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.EntityBase\KiraSoft.Domain.EntityBase.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.RepositoryBase\KiraSoft.Domain.RepositoryBase.csproj" />
+  </ItemGroup>
+
+</Project>

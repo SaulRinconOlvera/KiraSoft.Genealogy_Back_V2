@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.Application.Base.ViewModel\KiraSoft.Application.Base.ViewModel.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.EntityBase\KiraSoft.Domain.EntityBase.csproj" />
+  </ItemGroup>
+
+</Project>

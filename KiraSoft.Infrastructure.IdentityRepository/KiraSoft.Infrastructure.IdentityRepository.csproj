@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UserClaimRepository.cs~RF1e07986.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.CrossCutting.Operation\KiraSoft.CrossCutting.Operation.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.IdentityRepository\KiraSoft.Domain.IdentityRepository.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.Model.Identity\KiraSoft.Domain.Model.Identity.csproj" />
+    <ProjectReference Include="..\KiraSoft.Infrastructure.Persistence\KiraSoft.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\KiraSoft.Infrastructure.RepositoryBase\KiraSoft.Infrastructure.RepositoryBase.csproj" />
+  </ItemGroup>
+
+</Project>

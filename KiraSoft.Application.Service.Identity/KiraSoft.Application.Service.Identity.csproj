@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="RoleAppService.cs~RF68b9845.TMP" />
+    <None Remove="UserClaimAppService.cs~RF688c232.TMP" />
+    <None Remove="UserRoleAppService.cs~RF68a0b5b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.Application.Base.Service\KiraSoft.Application.Base.Service.csproj" />
+    <ProjectReference Include="..\KiraSoft.Application.IdentityViewModel\KiraSoft.Application.IdentityViewModel.csproj" />
+    <ProjectReference Include="..\KiraSoft.Application.Services.Indentity.Contracts\KiraSoft.Application.Services.Indentity.Contracts.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.IdentityRepository\KiraSoft.Domain.IdentityRepository.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.Model.Identity\KiraSoft.Domain.Model.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

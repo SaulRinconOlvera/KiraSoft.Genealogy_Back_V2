@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "KiraSoft.Infrastructure.Persistence": {
+      "commandName": "Project"
+    }
+  }
+}

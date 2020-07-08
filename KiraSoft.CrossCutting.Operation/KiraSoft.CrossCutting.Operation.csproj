@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Exceptions\BusinessException.cs~RF146aca9.TMP" />
+    <None Remove="Exceptions\ModelStateException.cs~RF1447121.TMP" />
+    <None Remove="Transaction\Implementation\ErrorViewModel.cs~RFa3c1313.TMP" />
+  </ItemGroup>
+
+</Project>

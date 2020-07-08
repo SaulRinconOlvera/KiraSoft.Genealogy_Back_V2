@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.Application.Service.Identity\KiraSoft.Application.Service.Identity.csproj" />
+    <ProjectReference Include="..\KiraSoft.Application.Services.Indentity.Contracts\KiraSoft.Application.Services.Indentity.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
