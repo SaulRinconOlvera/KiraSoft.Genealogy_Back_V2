@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class UserClaim : IdentityUserClaim<int>, IBaseEntity<int>, IBaseAuditable
+    public class UserClaim : IdentityUserClaim<Guid>, IBaseEntity<int>, IBaseAuditable
     {
         public UserClaim() : base()
         { Enabled = true; }

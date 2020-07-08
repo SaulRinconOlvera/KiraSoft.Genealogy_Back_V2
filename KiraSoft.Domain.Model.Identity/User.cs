@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class User : IdentityUser<int>, IBaseEntity<int>, IBaseAuditable
+    public class User : IdentityUser<Guid>, IBaseEntity<Guid>, IBaseAuditable
     {
         public User() : base()
         { Enabled = true; }
@@ -16,7 +16,7 @@ namespace KiraSoft.Domain.Model.Identity
         { Enabled = true; }
 
         [Key]
-        public override int Id { get; set; }
+        public override Guid Id { get; set; }
 
         [StringLength(128)]
         public string PersonName { get; set; }

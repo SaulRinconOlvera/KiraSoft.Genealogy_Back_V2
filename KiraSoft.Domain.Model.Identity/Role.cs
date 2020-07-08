@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class Role : IdentityRole<int>, IBaseEntity<int>, IBaseAuditable
+    public class Role : IdentityRole<Guid>, IBaseEntity<Guid>, IBaseAuditable
     {
         public Role() : base()
         { Enabled = true; }
@@ -16,7 +16,7 @@ namespace KiraSoft.Domain.Model.Identity
         { Enabled = true; }
 
         [Key]
-        public override int Id { get; set; }
+        public override Guid Id { get; set; }
 
         [StringLength(50)]
         public string CreatedBy { get; set; }

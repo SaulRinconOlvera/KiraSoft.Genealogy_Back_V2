@@ -6,13 +6,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class UserRole : IdentityUserRole<int>, IBaseEntity<int>, IBaseAuditable
+    public class UserRole : IdentityUserRole<Guid>, IBaseEntity<Guid>, IBaseAuditable
     {
         public UserRole() : base()
         { Enabled = true; }
 
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [StringLength(50)]
         public string CreatedBy { get; set; }

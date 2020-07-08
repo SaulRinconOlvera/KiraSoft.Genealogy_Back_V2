@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KiraSoft.Application.IdentityViewModel
 {
-    public class RoleViewModel : BaseViewModel
+    public class RoleViewModel : BaseGuidViewModel
     {
         [Required]
         [StringLength(128)]

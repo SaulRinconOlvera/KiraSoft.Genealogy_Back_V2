@@ -80,17 +80,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 - Cross Cutting", "1.5 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{34E886C3-366F-4C5F-AD96-F0770E535D86}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.2 - Operation", "1.5.2 - Operation", "{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1 - Operation", "1.5.1 - Operation", "{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.CrossCutting.Operation", "KiraSoft.CrossCutting.Operation\KiraSoft.CrossCutting.Operation.csproj", "{62805364-E055-44D9-9449-097E5E420D92}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Genealogy.Web.API", "KiraSoft.Genealogy.Web.API\KiraSoft.Genealogy.Web.API.csproj", "{6E7BCD10-9769-4AF4-8B2B-1837AEC77513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiraSoft.Application.Service.Register", "KiraSoft.Application.Service.Register\KiraSoft.Application.Service.Register.csproj", "{79474D07-72C5-4DF8-9D10-3165057A003B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Application.Service.Register", "KiraSoft.Application.Service.Register\KiraSoft.Application.Service.Register.csproj", "{79474D07-72C5-4DF8-9D10-3165057A003B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.6 - Register", "1.6 - Register", "{38D3165F-1276-4971-B7BC-ADFA8625BF7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiraSoft.Register.Services", "KiraSoft.Register.Services\KiraSoft.Register.Services.csproj", "{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Register.Services", "KiraSoft.Register.Services\KiraSoft.Register.Services.csproj", "{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

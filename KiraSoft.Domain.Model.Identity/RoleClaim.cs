@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class RoleClaim : IdentityRoleClaim<int>, IBaseEntity<int>, IBaseAuditable
+    public class RoleClaim : IdentityRoleClaim<Guid>, IBaseEntity<int>, IBaseAuditable
     {
         public RoleClaim() : base()
         { Enabled = true; }

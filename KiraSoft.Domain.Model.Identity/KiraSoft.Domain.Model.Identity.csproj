@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KiraSoft.Domain.EntityBase\KiraSoft.Domain.EntityBase.csproj" />
+    <ProjectReference Include="..\KiraSoft.Domain.Model.Base\KiraSoft.Domain.Model.Base.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,11 +4,12 @@ using KiraSoft.Application.IdentityViewModel;
 using KiraSoft.Application.Services.Indentity.Contracts;
 using KiraSoft.Domain.IdentityRepository;
 using KiraSoft.Domain.Model.Identity;
+using System;
 using System.Threading.Tasks;
 
 namespace KiraSoft.Application.Service.Identity
 {
-    public class UserAppService : ApplicationServiceBase<User, UserViewModel, int>, IUserAppService
+    public class UserAppService : ApplicationServiceBase<User, UserViewModel, Guid>, IUserAppService
     {
         public UserAppService(IUserRepository repository, IMapper mapper) : base(mapper) =>
             _repository = repository;
@@ -34,13 +35,13 @@ namespace KiraSoft.Application.Service.Identity
         //    return _mapper.GetViewModel(entity);
         //}
 
-        public UserViewModel GetForModify(int viewModelId)
+        public UserViewModel GetForModify(Guid viewModelId)
         {
             var entity = _repository.Get(viewModelId);
             return GetModelForModify(entity);
         }
 
-        public async Task<UserViewModel> GetForModifyAsync(int viewModelId)
+        public async Task<UserViewModel> GetForModifyAsync(Guid viewModelId)
         {
             var entity = await _repository.GetAsync(viewModelId);
             return GetModelForModify(entity);

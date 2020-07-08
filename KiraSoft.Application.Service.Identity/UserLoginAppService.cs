@@ -4,6 +4,7 @@ using KiraSoft.Application.MapperBase;
 using KiraSoft.Application.Services.Indentity.Contracts;
 using KiraSoft.Domain.IdentityRepository;
 using KiraSoft.Domain.Model.Identity;
+using System;
 using System.Threading.Tasks;
 
 namespace KiraSoft.Application.Service.Identity
@@ -11,11 +12,11 @@ namespace KiraSoft.Application.Service.Identity
     public class UserLoginAppService : IUserLoginAppServicce
     {
         private ILoginRepository _repository;
-        private GenericMapper<User, UserViewModel, int> _mapper;
+        private GenericMapper<User, UserViewModel, Guid> _mapper;
 
         public UserLoginAppService(ILoginRepository repository, IMapper mapper) 
         {
-            _mapper = new GenericMapper<User, UserViewModel, int>(mapper);
+            _mapper = new GenericMapper<User, UserViewModel, Guid>(mapper);
             _repository = repository;
         }
 

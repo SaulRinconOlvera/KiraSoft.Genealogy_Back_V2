@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 namespace KiraSoft.Infrastructure.Persistence.Contexts
 {
     public class GenealogyContext :
-        IdentityDbContext<User, Role, int, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
+        IdentityDbContext<User, Role, Guid, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         private readonly ILoggerFactory _loggerFactory;
         private readonly IConfiguration _config;
@@ -18,6 +18,10 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
         {
             _loggerFactory = loggerFactory;
             _config = config;
+        }
+
+        public GenealogyContext()
+        {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -100,7 +104,7 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
                 b.HasKey(e => new { e.UserId, e.RoleId });
                 b.HasOne(userRole => userRole.Role).WithMany(role => role.Users).HasForeignKey(userRole => userRole.RoleId);
                 b.HasOne(userRole => userRole.User).WithMany(user => user.Roles).HasForeignKey(userRole => userRole.UserId);
-                b.Property(p => p.Id).UseIdentityColumn();
+                b.Property(p => p.Id);
                 b.ToTable("UserRole");
             });
 

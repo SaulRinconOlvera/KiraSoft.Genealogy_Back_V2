@@ -11,8 +11,7 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 name: "Role",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
@@ -33,8 +32,7 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 name: "User",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(nullable: false),
                     UserName = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
                     Email = table.Column<string>(maxLength: 256, nullable: true),
@@ -72,7 +70,7 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<int>(nullable: false),
+                    RoleId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true),
                     CreatedBy = table.Column<string>(maxLength: 50, nullable: true),
@@ -100,7 +98,7 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true),
                     CreatedBy = table.Column<string>(maxLength: 50, nullable: true),
@@ -129,8 +127,8 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                     LoginProvider = table.Column<string>(maxLength: 128, nullable: false),
                     ProviderKey = table.Column<string>(maxLength: 128, nullable: false),
                     ProviderDisplayName = table.Column<string>(nullable: true),
-                    UserId = table.Column<int>(nullable: false),
-                    Id = table.Column<int>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     CreatedBy = table.Column<string>(maxLength: 50, nullable: true),
                     CreationDate = table.Column<DateTime>(type: "smalldatetime", nullable: false),
                     LastModifiedBy = table.Column<string>(maxLength: 50, nullable: true),
@@ -154,10 +152,9 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 name: "UserRole",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false),
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<Guid>(nullable: false),
+                    RoleId = table.Column<Guid>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     CreatedBy = table.Column<string>(maxLength: 50, nullable: true),
                     CreationDate = table.Column<DateTime>(type: "smalldatetime", nullable: false),
                     LastModifiedBy = table.Column<string>(maxLength: 50, nullable: true),
@@ -187,11 +184,11 @@ namespace KiraSoft.Infrastructure.Persistence.Migrations
                 name: "UserToken",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     LoginProvider = table.Column<string>(maxLength: 256, nullable: false),
                     Name = table.Column<string>(maxLength: 256, nullable: false),
                     Value = table.Column<string>(nullable: true),
-                    Id = table.Column<int>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     CreatedBy = table.Column<string>(maxLength: 50, nullable: true),
                     CreationDate = table.Column<DateTime>(type: "smalldatetime", nullable: false),
                     LastModifiedBy = table.Column<string>(maxLength: 50, nullable: true),

@@ -6,13 +6,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KiraSoft.Domain.Model.Identity
 {
-    public class UserToken : IdentityUserToken<int>, IBaseEntity<int>, IBaseAuditable
+    public class UserToken : IdentityUserToken<Guid>, IBaseEntity<Guid>, IBaseAuditable
     {
         public UserToken() : base()
         { Enabled = true; }
 
         //[Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [StringLength(50)]
         public string CreatedBy { get; set; }
