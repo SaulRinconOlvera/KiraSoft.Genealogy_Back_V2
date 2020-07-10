@@ -13,8 +13,7 @@ namespace KiraSoft.Application.Service.Identity
     {
         public RoleAppService(
             IRoleRepository repository,
-            IGenericMapper<Role, RoleViewModel, Guid> mapper
-            ) : base(mapper)
+            IGenericMapper<Role, RoleViewModel, Guid> mapper) : base(mapper)
         { _repository = repository; }
     }
 }
