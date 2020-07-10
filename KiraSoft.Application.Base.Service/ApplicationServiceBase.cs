@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using KiraSoft.Application.Base.ViewModel;
+﻿using KiraSoft.Application.Base.ViewModel;
 using KiraSoft.Application.MapperBase;
 using KiraSoft.Domain.EntityBase.Contracts;
 using KiraSoft.Domain.RepositoryBase.Contracts;
@@ -23,9 +22,9 @@ namespace KiraSoft.Application.Base.Service
 
         public void SetAutoSave(bool autoSave) => _autoSave = autoSave;
 
-        public ApplicationServiceBase(IMapper mapper)
+        public ApplicationServiceBase(IGenericMapper<TEntity, TViewModel, TType> mapper)
         {
-            _mapper = new GenericMapper<TEntity, TViewModel, TType>(mapper);
+            _mapper = mapper;
             _serviceUser = "SYSTEM";
         }
 

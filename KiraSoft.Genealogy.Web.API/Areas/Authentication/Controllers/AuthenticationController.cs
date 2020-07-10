@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
 {
+    [Route("api/v1/[controller]/[action]")]
+    [ApiController]
     public class AuthenticationController : Controller
     {
         private readonly IUserLoginAppServicce _service;
@@ -17,7 +19,6 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
             _service = service;
 
 		[HttpPost]
-		[Route("Login")]
 		public async Task<IActionResult> Login([FromBody] LoginViewModel viewModel)
 		{
 			if (!ModelState.IsValid) return BadRequest(ModelState);

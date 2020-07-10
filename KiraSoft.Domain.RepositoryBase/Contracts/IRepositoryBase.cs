@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace KiraSoft.Domain.RepositoryBase.Contracts
 {
     public interface IRepositoryBase<TKey, TEntity>
-            where TEntity : IBaseEntity<TKey>
+            where TEntity :  IBaseEntity<TKey>
     {
         //  Get
         TEntity Get(TKey entityId);

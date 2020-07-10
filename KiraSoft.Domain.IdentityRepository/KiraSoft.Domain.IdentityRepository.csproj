@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="IUserRoleRepository.cs~RF254ac98.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KiraSoft.Domain.Model.Base\KiraSoft.Domain.Model.Base.csproj" />
     <ProjectReference Include="..\KiraSoft.Domain.Model.Identity\KiraSoft.Domain.Model.Identity.csproj" />
     <ProjectReference Include="..\KiraSoft.Domain.RepositoryBase\KiraSoft.Domain.RepositoryBase.csproj" />
   </ItemGroup>

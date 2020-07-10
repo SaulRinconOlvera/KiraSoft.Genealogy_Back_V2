@@ -1,47 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="1 - Layers{25A3BA03-459D-4859-B12A-C3A2D42C950D}" Category="CodeMap_SolutionFolder" Bounds="650.747556058059,336.38268425236,593.55380666987,267.866203372429" Group="Expanded" Label="1 - Layers" UseManualLocation="True" />
-    <Node Id="1.1 - Infrastructure{A8A345FA-CB4D-47A9-B7C1-0DB6D52B908D}" Category="CodeMap_SolutionFolder" Bounds="934.934049429738,559.247627621589,137.910967306667,25.0023200063999" Group="Collapsed" Label="1.1 - Infrastructure" UseManualLocation="True" />
-    <Node Id="1.1.1 - SuperTypes{B5511DC9-2C73-4827-B517-8EE2220234A2}" Category="CodeMap_SolutionFolder" Bounds="969.437938895847,677.313043807092,313.666666666667,85.0002" Group="Expanded" Label="1.1.1 - SuperTypes" UseManualLocation="True" />
-    <Node Id="1.1.2 - Persistence{D606B544-7640-4A50-98DF-E9F97467039B}" Category="CodeMap_SolutionFolder" Bounds="647.617938895847,677.313043807091,291.82,85.0002" Group="Expanded" Label="1.1.2 - Persistence" UseManualLocation="True" />
-    <Node Id="1.1.3 - Repositories{16C4CC4F-17DB-41DA-AA86-AFF0DCC85697}" Category="CodeMap_SolutionFolder" Bounds="647.617938895847,507.312643807092,329.483333333334,140.0003" Group="Expanded" Label="1.1.3 - Repositories" UseManualLocation="True" />
-    <Node Id="1.2 - Domain{E7752088-CAD4-463F-BBFF-00B17ACF109F}" Category="CodeMap_SolutionFolder" Bounds="859.385811443846,497.657767092557,108.496666666667,24.9999999999999" Group="Collapsed" Label="1.2 - Domain" UseManualLocation="True" />
-    <Node Id="1.2.1 - SuperTypes{FD5055AF-AF28-4099-8FFD-0FA241881AF0}" Category="CodeMap_SolutionFolder" Bounds="850.015976068613,761.661113321819,284.256666666667,140" Group="Expanded" Label="1.2.1 - SuperTypes" UseManualLocation="True" />
-    <Node Id="1.2.2 - Model{2DC4261F-8A4E-4158-AB49-1BB7D0C1E635}" Category="CodeMap_SolutionFolder" Bounds="1022.91097606861,591.661113321819,280.466666666667,140" Group="Expanded" Label="1.2.2 - Model" UseManualLocation="True" />
-    <Node Id="1.2.3 - Repositories{65B82BE7-D017-4F5C-8A48-7D86C82A0D8E}" Category="CodeMap_SolutionFolder" Bounds="842.10764273528,476.661113321819,300.073333333333,85" Group="Expanded" Label="1.2.3 - Repositories" UseManualLocation="True" />
-    <Node Id="1.3 - Application{B1AC367E-2D19-43DB-9DFD-D2E99F25C4AB}" Category="CodeMap_SolutionFolder" Bounds="850.927593617558,442.657667092557,127.016666666666,25" Group="Collapsed" Label="1.3 - Application" UseManualLocation="True" />
-    <Node Id="1.3.1 - Supertypes{57BBF37E-2BA6-4B83-AD74-D5C31903F474}" Category="CodeMap_SolutionFolder" Bounds="551.366666666667,79.9998923076639,308.48,195" Group="Expanded" Label="1.3.1 - Supertypes" UseManualLocation="True" />
-    <Node Id="1.3.2 - Services{6BB9D8D0-9A2F-444B-85D5-6303C3B05A6D}" Category="CodeMap_SolutionFolder" Bounds="114.356666666667,79.9998923076639,407.01,375" Group="Expanded" Label="1.3.2 - Services" UseManualLocation="True" />
-    <Node Id="1.3.2.1 - Contracts{193F2B4B-7B71-4D4B-B347-4859193BD9BB}" Category="CodeMap_SolutionFolder" Bounds="134.356666666667,349.999892307664,367.01,85" Group="Expanded" Label="1.3.2.1 - Contracts" />
-    <Node Id="1.3.2.2 - Implementations{D05037A5-422F-4632-B59D-755C2E539B5E}" Category="CodeMap_SolutionFolder" Bounds="134.356666666667,119.999892307664,302.226666666667,85" Group="Expanded" Label="1.3.2.2 - Implementations" />
-    <Node Id="1.3.2.3 - Register{372ACB43-C5CD-4E55-9CBB-6C5EB1762E2C}" Category="CodeMap_SolutionFolder" Bounds="134.356666666667,234.999892307664,304.74,85" Group="Expanded" Label="1.3.2.3 - Register" />
-    <Node Id="1.3.3 - ViewModel{57A46EBB-AD5A-40C4-9F0C-0778C1391532}" Category="CodeMap_SolutionFolder" Bounds="114.356666666667,484.999892307664,321.696666666667,85" Group="Expanded" Label="1.3.3 - ViewModel" UseManualLocation="True" />
-    <Node Id="1.3.4 - Adapter{E054FD7A-A369-4079-A6C4-881DC30F653F}" Category="CodeMap_SolutionFolder" Bounds="551.366666666667,304.999892307664,269.733333333333,85" Group="Expanded" Label="1.3.4 - Adapter" UseManualLocation="True" />
-    <Node Id="1.4 - Distributed Services{49EA22FF-0B4D-44B4-B525-59BF2BA4D4E5}" Category="CodeMap_SolutionFolder" Bounds="827.14087139453,377.16550683864,171.403333333333,25" Group="Collapsed" Label="1.4 - Distributed Services" UseManualLocation="True" />
-    <Node Id="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" Category="CodeMap_SolutionFolder" Bounds="1086.16173120793,376.38470425876,138.142596373334,25.0038400128001" Group="Collapsed" Label="1.5 - Cross Cutting" UseManualLocation="True" />
-    <Node Id="1.5.2 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Category="CodeMap_SolutionFolder" Bounds="823.52352488599,718.176157110072,283.439999999999,85.0002" Group="Expanded" Label="1.5.2 - Operation" UseManualLocation="True" />
-    <Node Id="1.6 - Register{38D3165F-1276-4971-B7BC-ADFA8625BF7F}" Category="CodeMap_SolutionFolder" Bounds="670.747556058059,376.507673011314,109.6,25" Group="Collapsed" Label="1.6 - Register" UseManualLocation="True" />
-    <Node Id="@10" Category="CodeSchema_Assembly" Bounds="989.437938895848,717.311907268943,273.666666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.RepositoryBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.RepositoryBase.dll" />
-    <Node Id="@12" Category="CodeSchema_Assembly" Bounds="999.421410046283,408.252071869272,244.256666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.RepositoryBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.RepositoryBase.dll" />
-    <Node Id="@14" Category="CodeSchema_Assembly" Bounds="999.421410046283,353.252071869272,217.7,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.EntityBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.EntityBase.dll" />
-    <Node Id="@16" Category="CodeSchema_Assembly" Bounds="853.941496623964,343.14701051574,222.87,25" CodeSchemaProperty_StrongName="KiraSoft.Genealogy.Web.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPath)" Group="Collapsed" Label="KiraSoft.Genealogy.Web.API.dll" UseManualLocation="True" />
-    <Node Id="@18" Category="CodeSchema_Assembly" Bounds="571.366666666667,229.999892307664,268.48,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Base.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ca102065-1737-4a05-955a-962a6eb693bc.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Base.ViewModel.dll" />
-    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="571.366666666667,119.999892307664,246.41,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Base.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Base.Service.dll" />
-    <Node Id="@20" Category="CodeSchema_Assembly" Bounds="134.356666666667,524.999892307664,281.696666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Application.IdentityViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.IdentityViewModel.dll" />
-    <Node Id="@22" Category="CodeSchema_Assembly" Bounds="843.521839417352,758.217341545102,243.44,25" CodeSchemaProperty_StrongName="KiraSoft.CrossCutting.Operation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(62805364-e055-44d9-9449-097e5e420d92.OutputPath)" Group="Collapsed" Label="KiraSoft.CrossCutting.Operation.dll" />
-    <Node Id="@24" Category="CodeSchema_Assembly" Bounds="154.356666666667,274.999892307664,264.74,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Service.Register, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(79474d07-72c5-4df8-9d10-3165057a003b.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Service.Register.dll" />
-    <Node Id="@26" Category="CodeSchema_Assembly" Bounds="861.777090525357,453.189116596781,207.13,25" CodeSchemaProperty_StrongName="KiraSoft.Register.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPath)" Group="Collapsed" Label="KiraSoft.Register.Services.dll" UseManualLocation="True" />
-    <Node Id="@28" Category="CodeSchema_Assembly" Bounds="667.617938895848,547.311907268943,257.78,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(580ea22a-26c9-4d68-8992-477dbf45a917.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.Repositories.dll" />
-    <Node Id="@30" Category="CodeSchema_Assembly" Bounds="571.366666666667,344.999892307664,229.733333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Adapters, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Adapters.dll" />
-    <Node Id="@32" Category="CodeSchema_Assembly" Bounds="154.356666666667,389.999892307664,327.01,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Services.Indentity.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Services.Indentity.Contracts.dll" />
-    <Node Id="@34" Category="CodeSchema_Assembly" Bounds="667.617938895848,602.311907268943,289.483333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.IdentityRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.IdentityRepository.dll" />
-    <Node Id="@36" Category="CodeSchema_Assembly" Bounds="688.954743379616,523.252071869272,260.073333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.IdentityRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.IdentityRepository.dll" />
-    <Node Id="@38" Category="CodeSchema_Assembly" Bounds="154.356666666667,159.999892307664,262.226666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Service.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Service.Identity.dll" />
-    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="667.617938895848,717.311907268943,251.82,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.Persistence.dll" />
-    <Node Id="@40" Category="CodeSchema_Assembly" Bounds="688.954743379616,408.252071869272,240.466666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.Model.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.Model.Identity.dll" />
-    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="688.954743379616,353.252071869272,224.65,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.Model.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.Model.Base.dll" />
-    <Node Id="@8" Category="CodeSchema_Assembly" Bounds="571.366666666667,174.999892307664,247.953333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Application.MapperBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b44516b4-c808-417c-85de-ff28fac84012.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.MapperBase.dll" />
+    <Node Id="1 - Layers{25A3BA03-459D-4859-B12A-C3A2D42C950D}" Category="CodeMap_SolutionFolder" Bounds="524.358729258422,282.305064025743,591.591176502464,309.666589378464" Group="Expanded" Label="1 - Layers" UseManualLocation="True" />
+    <Node Id="1.1 - Infrastructure{A8A345FA-CB4D-47A9-B7C1-0DB6D52B908D}" Category="CodeMap_SolutionFolder" Bounds="731.648011751863,546.971553404207,137.906666666667,25" Group="Collapsed" Label="1.1 - Infrastructure" UseManualLocation="True" />
+    <Node Id="1.1.1 - SuperTypes{B5511DC9-2C73-4827-B517-8EE2220234A2}" Category="CodeMap_SolutionFolder" Bounds="890.438370430483,372.500364529849,313.666666666667,85.0002" Group="Expanded" Label="1.1.1 - SuperTypes" UseManualLocation="True" />
+    <Node Id="1.1.2 - Persistence{D606B544-7640-4A50-98DF-E9F97467039B}" Category="CodeMap_SolutionFolder" Bounds="568.618370430483,372.500297863205,291.82,85.0002000000002" Group="Expanded" Label="1.1.2 - Persistence" UseManualLocation="True" />
+    <Node Id="1.1.3 - Repositories{16C4CC4F-17DB-41DA-AA86-AFF0DCC85697}" Category="CodeMap_SolutionFolder" Bounds="568.618370430483,202.499964529849,329.483333333333,140.0003" Group="Expanded" Label="1.1.3 - Repositories" UseManualLocation="True" />
+    <Node Id="1.2 - Domain{E7752088-CAD4-463F-BBFF-00B17ACF109F}" Category="CodeMap_SolutionFolder" Bounds="748.640853823344,446.213283747913,108.496666666667,25" Group="Collapsed" Label="1.2 - Domain" UseManualLocation="True" />
+    <Node Id="1.2.1 - SuperTypes{FD5055AF-AF28-4099-8FFD-0FA241881AF0}" Category="CodeMap_SolutionFolder" Bounds="1240.31333333333,79.9998923076639,284.256666666667,140" Group="Expanded" Label="1.2.1 - SuperTypes" UseManualLocation="True" />
+    <Node Id="1.2.2 - Model{2DC4261F-8A4E-4158-AB49-1BB7D0C1E635}" Category="CodeMap_SolutionFolder" Bounds="929.846666666667,79.9998923076639,280.466666666667,140" Group="Expanded" Label="1.2.2 - Model" UseManualLocation="True" />
+    <Node Id="1.2.3 - Repositories{65B82BE7-D017-4F5C-8A48-7D86C82A0D8E}" Category="CodeMap_SolutionFolder" Bounds="929.846666666667,249.999892307664,300.073333333333,85" Group="Expanded" Label="1.2.3 - Repositories" UseManualLocation="True" />
+    <Node Id="1.3 - Application{B1AC367E-2D19-43DB-9DFD-D2E99F25C4AB}" Category="CodeMap_SolutionFolder" Bounds="746.244410145007,391.213183747914,127.016666666667,25" Group="Collapsed" Label="1.3 - Application" UseManualLocation="True" />
+    <Node Id="1.3.1 - Supertypes{57BBF37E-2BA6-4B83-AD74-D5C31903F474}" Category="CodeMap_SolutionFolder" Bounds="950.279571130165,426.66647947706,308.48,195.0004" Group="Expanded" Label="1.3.1 - Supertypes" UseManualLocation="True" />
+    <Node Id="1.3.2 - Services{6BB9D8D0-9A2F-444B-85D5-6303C3B05A6D}" Category="CodeMap_SolutionFolder" Bounds="513.269571130165,426.666117968991,407.01,375.001" Group="Expanded" Label="1.3.2 - Services" UseManualLocation="True" />
+    <Node Id="1.3.2.1 - Contracts{193F2B4B-7B71-4D4B-B347-4859193BD9BB}" Category="CodeMap_SolutionFolder" Bounds="533.269571130165,696.666817968991,367.01,85.0001999999997" Group="Expanded" Label="1.3.2.1 - Contracts" />
+    <Node Id="1.3.2.2 - Implementations{D05037A5-422F-4632-B59D-755C2E539B5E}" Category="CodeMap_SolutionFolder" Bounds="533.269571130165,466.666217968991,302.226666666667,85.0001999999997" Group="Expanded" Label="1.3.2.2 - Implementations" />
+    <Node Id="1.3.2.3 - Register{372ACB43-C5CD-4E55-9CBB-6C5EB1762E2C}" Category="CodeMap_SolutionFolder" Bounds="533.269571130165,581.666517968991,304.74,85.0002000000002" Group="Expanded" Label="1.3.2.3 - Register" />
+    <Node Id="1.3.3 - ViewModel{57A46EBB-AD5A-40C4-9F0C-0778C1391532}" Category="CodeMap_SolutionFolder" Bounds="513.269571130165,831.667217968991,321.696666666667,85.0002" Group="Expanded" Label="1.3.3 - ViewModel" UseManualLocation="True" />
+    <Node Id="1.3.4 - Adapter{E054FD7A-A369-4079-A6C4-881DC30F653F}" Category="CodeMap_SolutionFolder" Bounds="950.279571130165,651.66687947706,269.733333333333,85.0001999999997" Group="Expanded" Label="1.3.4 - Adapter" UseManualLocation="True" />
+    <Node Id="1.4 - Distributed Services{49EA22FF-0B4D-44B4-B525-59BF2BA4D4E5}" Category="CodeMap_SolutionFolder" Bounds="725.903718110024,322.305164025743,171.403333333333,25" Group="Collapsed" Label="1.4 - Distributed Services" UseManualLocation="True" />
+    <Node Id="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" Category="CodeMap_SolutionFolder" Bounds="957.810274240886,329.114048420203,138.138149093334,25.0009600031999" Group="Collapsed" Label="1.5 - Cross Cutting" UseManualLocation="True" />
+    <Node Id="1.5.1 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Category="CodeMap_SolutionFolder" Bounds="744.296651812721,755.416747069416,283.44,85.0002" Group="Expanded" Label="1.5.1 - Operation" UseManualLocation="True" />
+    <Node Id="1.6 - Register{38D3165F-1276-4971-B7BC-ADFA8625BF7F}" Category="CodeMap_SolutionFolder" Bounds="544.358729258423,331.042891259623,109.6,25" Group="Collapsed" Label="1.6 - Register" UseManualLocation="True" />
+    <Node Id="@10" Category="CodeSchema_Assembly" Bounds="910.438370430483,412.499655006067,273.666666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.RepositoryBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.RepositoryBase.dll" />
+    <Node Id="@12" Category="CodeSchema_Assembly" Bounds="1260.31333333333,174.999892307664,244.256666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.RepositoryBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.RepositoryBase.dll" />
+    <Node Id="@14" Category="CodeSchema_Assembly" Bounds="1260.31333333333,119.999892307664,217.7,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.EntityBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.EntityBase.dll" />
+    <Node Id="@16" Category="CodeSchema_Assembly" Bounds="774.581671806741,370.32056668336,222.87,25" CodeSchemaProperty_StrongName="KiraSoft.Genealogy.Web.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPath)" Group="Collapsed" Label="KiraSoft.Genealogy.Web.API.dll" UseManualLocation="True" />
+    <Node Id="@18" Category="CodeSchema_Assembly" Bounds="970.279571130165,576.666754477135,268.48,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Base.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ca102065-1737-4a05-955a-962a6eb693bc.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Base.ViewModel.dll" />
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="970.279571130165,466.666754477135,246.41,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Base.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Base.Service.dll" />
+    <Node Id="@20" Category="CodeSchema_Assembly" Bounds="533.269571130165,871.666754477135,281.696666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Application.IdentityViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.IdentityViewModel.dll" />
+    <Node Id="@22" Category="CodeSchema_Assembly" Bounds="764.296651812721,795.413402625989,243.44,25" CodeSchemaProperty_StrongName="KiraSoft.CrossCutting.Operation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(62805364-e055-44d9-9449-097e5e420d92.OutputPath)" Group="Collapsed" Label="KiraSoft.CrossCutting.Operation.dll" />
+    <Node Id="@24" Category="CodeSchema_Assembly" Bounds="553.269571130165,621.666754477135,264.74,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Service.Register, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(79474d07-72c5-4df8-9d10-3165057a003b.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Service.Register.dll" />
+    <Node Id="@26" Category="CodeSchema_Assembly" Bounds="782.451536548042,480.272942541054,207.13,25" CodeSchemaProperty_StrongName="KiraSoft.Register.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPath)" Group="Collapsed" Label="KiraSoft.Register.Services.dll" UseManualLocation="True" />
+    <Node Id="@28" Category="CodeSchema_Assembly" Bounds="588.618370430483,242.499655006067,257.78,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(580ea22a-26c9-4d68-8992-477dbf45a917.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.Repositories.dll" />
+    <Node Id="@30" Category="CodeSchema_Assembly" Bounds="970.279571130165,691.666754477135,229.733333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Adapters, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Adapters.dll" />
+    <Node Id="@32" Category="CodeSchema_Assembly" Bounds="553.269571130165,736.666754477135,327.01,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Services.Indentity.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Services.Indentity.Contracts.dll" />
+    <Node Id="@34" Category="CodeSchema_Assembly" Bounds="588.618370430483,297.499655006067,289.483333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.IdentityRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.IdentityRepository.dll" />
+    <Node Id="@36" Category="CodeSchema_Assembly" Bounds="949.846666666667,289.999892307664,260.073333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.IdentityRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.IdentityRepository.dll" />
+    <Node Id="@38" Category="CodeSchema_Assembly" Bounds="553.269571130165,506.666754477135,262.226666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Application.Service.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.Service.Identity.dll" />
+    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="588.618370430483,412.499655006067,251.82,25" CodeSchemaProperty_StrongName="KiraSoft.Infrastructure.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPath)" Group="Collapsed" Label="KiraSoft.Infrastructure.Persistence.dll" />
+    <Node Id="@40" Category="CodeSchema_Assembly" Bounds="949.846666666667,174.999892307664,240.466666666667,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.Model.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.Model.Identity.dll" />
+    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="949.846666666667,119.999892307664,224.65,25" CodeSchemaProperty_StrongName="KiraSoft.Domain.Model.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPath)" Group="Collapsed" Label="KiraSoft.Domain.Model.Base.dll" />
+    <Node Id="@8" Category="CodeSchema_Assembly" Bounds="970.279571130165,521.666754477135,247.953333333333,25" CodeSchemaProperty_StrongName="KiraSoft.Application.MapperBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b44516b4-c808-417c-85de-ff28fac84012.OutputPath)" Group="Collapsed" Label="KiraSoft.Application.MapperBase.dll" />
   </Nodes>
   <Links>
     <Link Source="1 - Layers{25A3BA03-459D-4859-B12A-C3A2D42C950D}" Target="1.1 - Infrastructure{A8A345FA-CB4D-47A9-B7C1-0DB6D52B908D}" Category="Contains" FetchingParent="1 - Layers{25A3BA03-459D-4859-B12A-C3A2D42C950D}" />
@@ -81,8 +81,8 @@
     <Link Source="1.3.3 - ViewModel{57A46EBB-AD5A-40C4-9F0C-0778C1391532}" Target="@20" Category="Contains" FetchingParent="1.3.3 - ViewModel{57A46EBB-AD5A-40C4-9F0C-0778C1391532}" />
     <Link Source="1.3.4 - Adapter{E054FD7A-A369-4079-A6C4-881DC30F653F}" Target="@30" Category="Contains" FetchingParent="1.3.4 - Adapter{E054FD7A-A369-4079-A6C4-881DC30F653F}" />
     <Link Source="1.4 - Distributed Services{49EA22FF-0B4D-44B4-B525-59BF2BA4D4E5}" Target="@16" Category="Contains" FetchingParent="1.4 - Distributed Services{49EA22FF-0B4D-44B4-B525-59BF2BA4D4E5}" />
-    <Link Source="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" Target="1.5.2 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Category="Contains" FetchingParent="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" />
-    <Link Source="1.5.2 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Target="@22" Category="Contains" FetchingParent="1.5.2 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" />
+    <Link Source="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" Target="1.5.1 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Category="Contains" FetchingParent="1.5 - Cross Cutting{C428CCB8-8EE0-4134-85C9-B839CA76A261}" />
+    <Link Source="1.5.1 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" Target="@22" Category="Contains" FetchingParent="1.5.1 - Operation{02E21921-8DEA-4355-9E65-D37DD9C1C1A3}" />
     <Link Source="1.6 - Register{38D3165F-1276-4971-B7BC-ADFA8625BF7F}" Target="@26" Category="Contains" FetchingParent="1.6 - Register{38D3165F-1276-4971-B7BC-ADFA8625BF7F}" />
     <Link Source="@10" Target="@12" Category="References" Bounds="607.208411270984,205.946990606757,754.279696323141,664.052901700907" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
       <Category Ref="CodeMap_ProjectReference" />
@@ -91,7 +91,7 @@
       <Category Ref="Implements" />
     </Link>
     <Link Source="@10" Target="@14" Category="CodeMap_ProjectReference" Bounds="605.945888888889,151.253877391442,743.809487063034,718.746014916222" />
-    <Link Source="@12" Target="@14" Category="CodeMap_ProjectReference" Bounds="992.144287109375,826.6611328125,0,21" />
+    <Link Source="@12" Target="@14" Category="CodeMap_ProjectReference" Bounds="1374.29326349676,153.748376725242,5.13060562650844,21.2514489156663" />
     <Link Source="@16" Target="@10" Category="CodeMap_ExternalReference" Bounds="722.77232697631,858.843418135037,98.8729899070486,10.2302057441973" />
     <Link Source="@16" Target="@12" Category="CodeMap_ExternalReference" Bounds="939.823093434344,207.42983745954,428.994845220398,627.570054848124" />
     <Link Source="@16" Target="@14" Category="CodeMap_ExternalReference" Bounds="938.933665501166,152.674933038564,417.873936768601,682.3249592691" />
@@ -124,6 +124,7 @@
     <Link Source="@16" Target="@38" Category="CodeMap_ExternalReference" Bounds="303.65120299307,191.502917488492,615.667716760016,643.496974819172" />
     <Link Source="@16" Target="@4" Category="CodeMap_ExternalReference" Bounds="395.16444857486,853.312347133338,424.678884758474,22.151270544049" />
     <Link Source="@16" Target="@40" Category="CodeMap_ExternalReference" Bounds="933.907152777778,208.807232132226,131.691795283007,626.192660175438" />
+    <Link Source="@16" Target="@6" Category="CodeMap_ExternalReference" Bounds="933.566678321679,153.852768300551,124.695968603782,681.147124007113" />
     <Link Source="@16" Target="@8" Category="CodeMap_ExternalReference" Bounds="702.84134018118,208.474671461153,223.968527243063,626.525220846511" />
     <Link Source="@2" Target="@12" Category="References" Bounds="817.213127218739,142.30593171971,434.650347196236,34.7533241685101" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="25">
       <Category Ref="CodeMap_ProjectReference" />
@@ -132,8 +133,8 @@
     <Link Source="@2" Target="@14" Category="CodeSchema_Calls" Bounds="817.776666666667,132.499892307664,433.536666666667,0" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="15">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@2" Target="@18" Category="CodeMap_ProjectReference" Bounds="746.66455078125,144.999328613281,82.7896728515625,82.7232055664063" />
-    <Link Source="@2" Target="@8" Category="References" Bounds="694.747045135676,144.999335164802,0.294649657415675,21.0009856883352" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="28">
+    <Link Source="@2" Target="@18" Category="CodeMap_ProjectReference" Bounds="1145.57739257813,491.666564941406,82.7896728515625,82.7232055664063" />
+    <Link Source="@2" Target="@8" Category="References" Bounds="1093.65994959917,491.666578286579,0.294649657415675,21.0009856883351" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="28">
       <Category Ref="CodeMap_ProjectReference" />
       <Category Ref="CodeSchema_Calls" />
     </Link>
@@ -146,18 +147,20 @@
     <Link Source="@24" Target="@18" Category="CodeMap_ExternalReference" Bounds="403.082222222223,255.961224840787,177.220378411678,19.0386674668771" />
     <Link Source="@24" Target="@2" Category="CodeMap_ExternalReference" Bounds="319.617392473119,148.197192822086,333.650625623843,126.802699485578" />
     <Link Source="@24" Target="@20" Category="CodeMap_ExternalReference" Bounds="276.195423541405,299.999892307664,9.95515979192891,216.00954271508" />
-    <Link Source="@24" Target="@32" Category="References" Bounds="290.110905797102,299.999892307664,22.0145449048146,81.3127561925061" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+    <Link Source="@24" Target="@22" Category="CodeMap_ExternalReference" Bounds="306.574803921569,299.999892307664,627.524819914923,395.203849519897" />
+    <Link Source="@24" Target="@32" Category="References" Bounds="290.110905797102,299.999892307664,22.0145449048146,81.3127561925061" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@24" Target="@36" Category="CodeMap_ExternalReference" Bounds="419.096666666667,290.003243894362,521.751609016869,9.86724875949648" />
-    <Link Source="@24" Target="@38" Category="References" Bounds="285.704936157603,193.999355006067,0.885136306165293,81.0005373015971" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+    <Link Source="@24" Target="@38" Category="References" Bounds="285.704936157603,193.999355006067,0.885136306165293,81.0005373015971" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@24" Target="@40" Category="CodeMap_ExternalReference" Bounds="384.645833333334,201.139550657419,578.587448328582,73.860341650245" />
+    <Link Source="@24" Target="@6" Category="CodeMap_ExternalReference" Bounds="349.262553763441,146.763963553228,641.547804986991,128.235928754436" />
     <Link Source="@24" Target="@8" Category="CodeMap_ExternalReference" Bounds="337.80375,202.139310345408,297.720481328104,72.8605819622558" />
     <Link Source="@26" Target="@10" Category="CodeMap_ExternalReference" Bounds="642.318128713592,684.999892307664,593.825541921329,182.357960536695" />
-    <Link Source="@26" Target="@12" Category="CodeMap_ExternalReference" Bounds="911.823478106552,331.658215537512,76.7621312363484,461.12568716473" />
-    <Link Source="@26" Target="@14" Category="CodeMap_ExternalReference" Bounds="911.615395560655,331.658215537512,77.3226618572984,516.10295823359" />
+    <Link Source="@26" Target="@12" Category="CodeMap_ExternalReference" Bounds="1279.56981099656,208.793882393401,98.2357661997528,451.206009914263" />
+    <Link Source="@26" Target="@14" Category="CodeMap_ExternalReference" Bounds="1278.98525462963,153.871193215922,86.5245756604709,506.128699091742" />
     <Link Source="@26" Target="@18" Category="CodeMap_ExternalReference" Bounds="729.40303958295,260.412521849746,530.839431347283,399.587370457918" />
     <Link Source="@26" Target="@2" Category="CodeMap_ExternalReference" Bounds="714.649306966661,151.119779352191,548.720399823462,508.880112955473" />
     <Link Source="@26" Target="@20" Category="CodeMap_ExternalReference" Bounds="376.869106546202,551.202029512594,807.234473700712,108.79786279507" />
@@ -173,12 +176,13 @@
     </Link>
     <Link Source="@26" Target="@32" Category="CodeMap_ExternalReference" Bounds="370.922384636427,417.43898828241,861.528417832709,242.560904025254" />
     <Link Source="@26" Target="@34" Category="CodeMap_ExternalReference" Bounds="419.340707500081,682.307042290481,754.506742724245,71.8397800639472" />
-    <Link Source="@26" Target="@36" Category="CodeMap_ExternalReference" Bounds="914.647437981848,331.658215537512,69.3046419036973,176.624707097067" />
+    <Link Source="@26" Target="@36" Category="CodeMap_ExternalReference" Bounds="1090.76669188018,322.944350268896,179.427418480178,337.055542038768" />
     <Link Source="@26" Target="@38" Category="CodeMap_ExternalReference" Bounds="318.290277580448,189.052744269889,933.773597419553,470.947148037775" />
     <Link Source="@26" Target="@4" Category="CodeSchema_Calls" Bounds="329.591386430891,684.999892307664,886.74613341038,183.179270413933" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@26" Target="@40" Category="CodeMap_ExternalReference" Bounds="918.078153243007,331.658215537512,231.737441021718,347.515369344963" />
+    <Link Source="@26" Target="@40" Category="CodeMap_ExternalReference" Bounds="1078.9386459766,208.278912138153,192.580606600721,451.720980169511" />
+    <Link Source="@26" Target="@6" Category="CodeMap_ExternalReference" Bounds="1070.46587416723,153.363231206334,201.413091882155,506.63666110133" />
     <Link Source="@26" Target="@8" Category="CodeMap_ExternalReference" Bounds="717.242155278965,205.764444880095,544.618935786327,454.235447427569" />
     <Link Source="@28" Target="@10" Category="References" Bounds="287.493970588236,724.999892307664,273.26915888843,140.8760535668" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
       <Category Ref="CodeMap_ProjectReference" />
@@ -190,16 +194,17 @@
     </Link>
     <Link Source="@28" Target="@14" Category="CodeMap_ExternalReference" Bounds="287.081077586207,149.17997181728,1050.2774662109,550.819920490384" />
     <Link Source="@28" Target="@22" Category="CodeMap_ExternalReference" Bounds="392.136666666667,712.499892307664,438.706666666666,0" />
-    <Link Source="@28" Target="@34" Category="References" Bounds="800.110583860735,572.312023721373,6.15392638929507,21.3521122996867" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+    <Link Source="@28" Target="@34" Category="References" Bounds="721.111021945634,267.499655006067,6.15390910460246,21.3520135056128" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@28" Target="@36" Category="References" Bounds="288.144126016261,319.038059656243,758.798539374831,380.96183265142" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+    <Link Source="@28" Target="@36" Category="References" Bounds="288.144126016261,319.038059656243,758.798539374831,380.96183265142" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@28" Target="@4" Category="CodeSchema_Calls" Bounds="260.643524786202,724.999892307664,2.38402423340659,136.001382442656" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@28" Target="@40" Category="CodeMap_ExternalReference" Bounds="282.456984126985,204.908456632886,760.869092095746,495.091435674778" />
+    <Link Source="@28" Target="@6" Category="CodeMap_ExternalReference" Bounds="280.464877873564,150.287256411098,757.205461437351,549.712635896566" />
     <Link Source="@30" Target="@14" Category="CodeMap_ExternalReference" Bounds="724.173888888889,147.816147686649,598.500865395687,197.183744621015" />
     <Link Source="@30" Target="@18" Category="CodeMap_ExternalReference" Bounds="688.339130434783,263.874837706094,13.666632386792,81.12505460157" />
     <Link Source="@30" Target="@20" Category="References" Bounds="311.992760049944,369.999892307664,345.69693902413,151.389682846706" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="19">
@@ -208,6 +213,7 @@
     <Link Source="@30" Target="@40" Category="References" Bounds="714.457352941177,203.644420619422,319.169568368388,141.355471688242" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="18">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
+    <Link Source="@30" Target="@6" Category="CodeMap_ExternalReference" Bounds="707.118796296297,149.621847502048,326.444873485105,195.378044805616" />
     <Link Source="@32" Target="@12" Category="CodeMap_ExternalReference" Bounds="379.755852713179,201.78153973598,931.969738515175,188.218352571683" />
     <Link Source="@32" Target="@14" Category="CodeMap_ExternalReference" Bounds="366.533040123457,147.23865833861,945.241814347123,242.761233969054" />
     <Link Source="@32" Target="@18" Category="CodeMap_ExternalReference" Bounds="348.154244791667,258.432882516467,318.840313821797,131.567009791197" />
@@ -219,77 +225,92 @@
       <Category Ref="CodeSchema_ReturnTypeLink" />
     </Link>
     <Link Source="@32" Target="@8" Category="CodeMap_ExternalReference" Bounds="339.808275193799,204.454146394134,325.767987955112,185.54574591353" />
-    <Link Source="@34" Target="@10" Category="InheritsFrom" Bounds="313.219166666667,779.999892307664,237.219235163604,86.9041037355981" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+    <Link Source="@34" Target="@10" Category="InheritsFrom" Bounds="313.219166666667,779.999892307664,237.219235163604,86.9041037355981" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
       <Category Ref="CodeMap_ProjectReference" />
       <Category Ref="CodeSchema_Calls" />
     </Link>
-    <Link Source="@34" Target="@12" Category="References" Bounds="302.877284482759,204.187612197001,1047.8190641004,550.812280110662" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+    <Link Source="@34" Target="@12" Category="References" Bounds="302.877284482759,204.187612197001,1047.8190641004,550.812280110662" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
       <Category Ref="CodeMap_ExternalReference" />
       <Category Ref="Implements" />
     </Link>
     <Link Source="@34" Target="@14" Category="CodeMap_ExternalReference" Bounds="300.556305774279,149.530093147366,1039.37234113649,605.469799160298" />
-    <Link Source="@34" Target="@22" Category="CodeSchema_Calls" Bounds="421.835683772962,722.988556572919,409.579535782414,33.0081022001608" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+    <Link Source="@34" Target="@22" Category="CodeSchema_Calls" Bounds="421.835683772962,722.988556572919,409.579535782414,33.0081022001608" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@34" Target="@36" Category="Implements" Bounds="300.624811827958,319.51931595214,749.94906093948,435.480576355524" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+    <Link Source="@34" Target="@36" Category="Implements" Bounds="300.624811827958,319.51931595214,749.94906093948,435.480576355524" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@34" Target="@4" Category="CodeSchema_Calls" Bounds="263.767998364915,779.999892307664,13.2834146785636,81.1182947889984" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@34" Target="@40" Category="References" Bounds="296.145352011495,205.321847702883,749.629751468214,549.678044604781" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="81">
-      <Category Ref="CodeMap_ProjectReference" />
-      <Category Ref="CodeSchema_Calls" />
-    </Link>
-    <Link Source="@36" Target="@12" Category="Implements" Bounds="992.144309401947,541.661035543912,2.27373675443232E-13,251.0007" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+    <Link Source="@34" Target="@40" Category="References" Bounds="296.145352011495,205.321847702883,749.629751468214,549.678044604781" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="46">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@36" Target="@14" Category="CodeMap_ExternalReference" Bounds="992.144309401947,541.661035543912,0,306.0008" />
-    <Link Source="@36" Target="@40" Category="References" Bounds="1004.71780922901,541.661035543912,139.470411582425,138.655121387" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+    <Link Source="@34" Target="@6" Category="CodeMap_ProjectReference" Bounds="294.513162729659,150.668517519224,745.253203296849,604.33137478844" />
+    <Link Source="@36" Target="@12" Category="Implements" Bounds="1112.77010869565,203.197528410531,228.371987392262,86.8023638971333" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
+    <Link Source="@36" Target="@14" Category="CodeMap_ExternalReference" Bounds="1101.15392156863,149.55979084911,238.979485587827,140.440101458554" />
+    <Link Source="@36" Target="@40" Category="References" Bounds="1071.91002454017,208.96736821239,6.90772908302051,81.0325240952735" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@36" Target="@6" Category="CodeMap_ProjectReference" Bounds="1064.40662349266,153.951439898865,14.1743814092972,136.048452408799" />
     <Link Source="@38" Target="@12" Category="CodeSchema_Calls" Bounds="416.583333333334,174.292737154766,834.730841285325,11.4141166994103" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
       <Category Ref="CodeMap_ExternalReference" />
     </Link>
     <Link Source="@38" Target="@14" Category="CodeMap_ExternalReference" Bounds="416.583333333334,136.849605341665,834.736124578497,30.8107874765984" />
     <Link Source="@38" Target="@18" Category="CodeMap_ExternalReference" Bounds="360.494404761905,184.999892307664,261.210233791779,43.5208774099489" />
-    <Link Source="@38" Target="@2" Category="InheritsFrom" Bounds="412.481829933032,145.181690641336,152.386215867741,14.8995937473806" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="28">
+    <Link Source="@38" Target="@2" Category="InheritsFrom" Bounds="412.481829933032,145.181690641336,152.386215867741,14.8995937473806" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="23">
       <Category Ref="CodeMap_ProjectReference" />
       <Category Ref="CodeSchema_Calls" />
       <Category Ref="CodeSchema_FieldRead" />
       <Category Ref="CodeSchema_FieldWrite" />
       <Category Ref="Implements" />
     </Link>
-    <Link Source="@38" Target="@20" Category="References" Bounds="275.809550649637,184.999892307664,9.30890825447278,331.00355702704" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="71">
+    <Link Source="@38" Target="@20" Category="References" Bounds="275.809550649637,184.999892307664,9.30890825447278,331.00355702704" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="81">
       <Category Ref="CodeMap_ProjectReference" />
       <Category Ref="CodeSchema_Calls" />
       <Category Ref="CodeSchema_ReturnTypeLink" />
     </Link>
-    <Link Source="@38" Target="@32" Category="Implements" Bounds="287.230416666667,184.999892307664,27.6157192037103,196.087947008594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+    <Link Source="@38" Target="@22" Category="CodeSchema_Calls" Bounds="301.120308641976,184.999892307664,637.760461062377,509.38329368778" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@38" Target="@36" Category="References" Bounds="361.855897435898,184.999892307664,632.759676286662,103.546547452962" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+    <Link Source="@38" Target="@32" Category="Implements" Bounds="287.230416666667,184.999892307664,27.6157192037103,196.087947008594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@38" Target="@36" Category="References" Bounds="361.855897435898,184.999892307664,632.759676286662,103.546547452962" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
       <Category Ref="CodeMap_ProjectReference" />
       <Category Ref="CodeSchema_Calls" />
     </Link>
-    <Link Source="@38" Target="@40" Category="References" Bounds="416.583333333334,175.006487941163,524.264977585134,10.0227815905698" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="39">
+    <Link Source="@38" Target="@40" Category="References" Bounds="416.583333333334,175.006487941163,524.264977585134,10.0227815905698" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="114">
       <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
     </Link>
-    <Link Source="@38" Target="@8" Category="CodeSchema_Calls" Bounds="416.583333333334,177.298203981189,145.789354209967,5.33540519790546" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+    <Link Source="@38" Target="@6" Category="CodeSchema_Calls" Bounds="416.583333333334,138.747495157042,524.275244688746,27.0000834136872" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
       <Category Ref="CodeMap_ExternalReference" />
     </Link>
+    <Link Source="@38" Target="@8" Category="References" Bounds="416.583333333334,177.298203981189,145.789354209967,5.33540519790546" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ExternalReference" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
     <Link Source="@4" Target="@14" Category="CodeMap_ExternalReference" Bounds="278.748277777778,150.042049423301,1064.47846948666,719.957842884362" />
-    <Link Source="@4" Target="@40" Category="References" Bounds="274.83165467626,205.861264084373,773.853692542346,664.138628223291" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="159">
+    <Link Source="@4" Target="@40" Category="References" Bounds="274.83165467626,205.861264084373,773.853692542346,664.138628223291" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="163">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@40" Target="@14" Category="Implements" Bounds="1011.10039799246,711.661435543912,139.470411582425,138.655121386999" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="14">
+    <Link Source="@4" Target="@6" Category="CodeMap_ExternalReference" Bounds="273.63175,151.147566819031,768.601698761283,718.852325488633" />
+    <Link Source="@40" Target="@14" Category="Implements" Bounds="1138.05348484849,146.627654870417,154.284788124665,28.3722374372468" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="14">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
-    <Link Source="@6" Target="@14" Category="Implements" Bounds="1006.48693022282,656.661335543912,139.68841783237,192.713487444641" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+    <Link Source="@40" Target="@6" Category="InheritsFrom" Bounds="1065.2499268019,153.908106917668,3.03272798115449,21.0917187232404" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@6" Target="@14" Category="Implements" Bounds="1174.49666666667,132.499892307664,76.8166666666671,0" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
       <Category Ref="CodeMap_ProjectReference" />
     </Link>
     <Link Source="@8" Target="@14" Category="CodeMap_ProjectReference" Bounds="818.613822974027,142.101265910008,432.920463800555,35.3367746713226" />
-    <Link Source="@8" Target="@18" Category="CodeMap_ProjectReference" Bounds="697.67590484987,199.999435164802,3.94723733016508,21.1528205147269" />
+    <Link Source="@8" Target="@18" Category="CodeMap_ProjectReference" Bounds="1096.58880931337,546.666678286579,3.94723733016508,21.1528205147268" />
   </Links>
   <Categories>
     <Category Id="CodeMap_ExternalReference" Label="External Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
@@ -619,49 +640,49 @@
   </Styles>
   <Paths>
     <Path Id="077c3957-aa0d-48f1-9d1b-9054aa68c54e.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.CrossCutting.Register.Services\bin\Debug\netcoreapp3.1\KiraSoft.CrossCutting.Register.Services.dll" />
-    <Path Id="0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.RepositoryBase\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.RepositoryBase.dll" />
-    <Path Id="0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.RepositoryBase/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.RepositoryBase.dll" />
+    <Path Id="0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.RepositoryBase\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.RepositoryBase.dll" />
+    <Path Id="0c4261b2-f116-4eab-97a1-e5bc0ef7705a.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.RepositoryBase/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.RepositoryBase.dll" />
     <Path Id="2049f4ab-5042-4447-89d0-c48b0fa9777e.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Distributed.Services\bin\Debug\netcoreapp3.1\KiraSoft.Distributed.Services.dll" />
     <Path Id="204baacb-851a-46f2-a81c-ea5b56535c9b.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.Register.Services\bin\Debug\netcoreapp3.1\KiraSoft.Domain.Register.Services.dll" />
-    <Path Id="219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Register.Services\bin\Debug\netcoreapp3.1\KiraSoft.Register.Services.dll" />
-    <Path Id="219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Register.Services/bin/Debug/netcoreapp3.1/KiraSoft.Register.Services.dll" />
-    <Path Id="22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Base.Service\bin\Debug\netcoreapp3.1\KiraSoft.Application.Base.Service.dll" />
-    <Path Id="22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Base.Service/bin/Debug/netcoreapp3.1/KiraSoft.Application.Base.Service.dll" />
-    <Path Id="35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.EntityBase\bin\Debug\netcoreapp3.1\KiraSoft.Domain.EntityBase.dll" />
-    <Path Id="35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.EntityBase/bin/Debug/netcoreapp3.1/KiraSoft.Domain.EntityBase.dll" />
-    <Path Id="580ea22a-26c9-4d68-8992-477dbf45a917.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.Repositories\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.Repositories.dll" />
-    <Path Id="580ea22a-26c9-4d68-8992-477dbf45a917.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.Repositories/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.Repositories.dll" />
+    <Path Id="219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Register.Services\bin\Debug\netcoreapp3.1\KiraSoft.Register.Services.dll" />
+    <Path Id="219b708f-0a5c-4837-9e55-9c48f2be7da0.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Register.Services/bin/Debug/netcoreapp3.1/KiraSoft.Register.Services.dll" />
+    <Path Id="22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Base.Service\bin\Debug\netcoreapp3.1\KiraSoft.Application.Base.Service.dll" />
+    <Path Id="22c5e6ab-5e7a-4a48-a75d-8ba0e3a6ce88.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Base.Service/bin/Debug/netcoreapp3.1/KiraSoft.Application.Base.Service.dll" />
+    <Path Id="35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.EntityBase\bin\Debug\netcoreapp3.1\KiraSoft.Domain.EntityBase.dll" />
+    <Path Id="35f4a125-ef34-4f73-bba2-daabb0b78a66.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.EntityBase/bin/Debug/netcoreapp3.1/KiraSoft.Domain.EntityBase.dll" />
+    <Path Id="580ea22a-26c9-4d68-8992-477dbf45a917.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.Repositories\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.Repositories.dll" />
+    <Path Id="580ea22a-26c9-4d68-8992-477dbf45a917.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.Repositories/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.Repositories.dll" />
     <Path Id="5daf6f76-5261-46a4-b2f1-eec79d182c6a.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Register.Services\bin\Debug\netcoreapp3.1\KiraSoft.Application.Register.Services.dll" />
-    <Path Id="62805364-e055-44d9-9449-097e5e420d92.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.CrossCutting.Operation\bin\Debug\netcoreapp3.1\KiraSoft.CrossCutting.Operation.dll" />
-    <Path Id="62805364-e055-44d9-9449-097e5e420d92.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.CrossCutting.Operation/bin/Debug/netcoreapp3.1/KiraSoft.CrossCutting.Operation.dll" />
-    <Path Id="6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.Model.Identity\bin\Debug\netcoreapp3.1\KiraSoft.Domain.Model.Identity.dll" />
-    <Path Id="6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.Model.Identity/bin/Debug/netcoreapp3.1/KiraSoft.Domain.Model.Identity.dll" />
-    <Path Id="6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Genealogy.Web.API\bin\Debug\netcoreapp3.1\KiraSoft.Genealogy.Web.API.dll" />
-    <Path Id="6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Genealogy.Web.API/bin/Debug/netcoreapp3.1/KiraSoft.Genealogy.Web.API.dll" />
-    <Path Id="79474d07-72c5-4df8-9d10-3165057a003b.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Service.Register\bin\Debug\netcoreapp3.1\KiraSoft.Application.Service.Register.dll" />
-    <Path Id="79474d07-72c5-4df8-9d10-3165057a003b.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Service.Register/bin/Debug/netcoreapp3.1/KiraSoft.Application.Service.Register.dll" />
+    <Path Id="62805364-e055-44d9-9449-097e5e420d92.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.CrossCutting.Operation\bin\Debug\netcoreapp3.1\KiraSoft.CrossCutting.Operation.dll" />
+    <Path Id="62805364-e055-44d9-9449-097e5e420d92.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.CrossCutting.Operation/bin/Debug/netcoreapp3.1/KiraSoft.CrossCutting.Operation.dll" />
+    <Path Id="6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.Model.Identity\bin\Debug\netcoreapp3.1\KiraSoft.Domain.Model.Identity.dll" />
+    <Path Id="6b83deb8-3f1c-49b5-b5e3-c23f1cf6ebfc.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.Model.Identity/bin/Debug/netcoreapp3.1/KiraSoft.Domain.Model.Identity.dll" />
+    <Path Id="6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Genealogy.Web.API\bin\Debug\netcoreapp3.1\KiraSoft.Genealogy.Web.API.dll" />
+    <Path Id="6e7bcd10-9769-4af4-8b2b-1837aec77513.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Genealogy.Web.API/bin/Debug/netcoreapp3.1/KiraSoft.Genealogy.Web.API.dll" />
+    <Path Id="79474d07-72c5-4df8-9d10-3165057a003b.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Service.Register\bin\Debug\netcoreapp3.1\KiraSoft.Application.Service.Register.dll" />
+    <Path Id="79474d07-72c5-4df8-9d10-3165057a003b.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Service.Register/bin/Debug/netcoreapp3.1/KiraSoft.Application.Service.Register.dll" />
     <Path Id="8fff91e1-57f6-4193-b043-42c711e0d6a4.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraStudio.Application.Services.Register\bin\Debug\netcoreapp3.1\KiraStudio.Application.Services.Register.dll" />
-    <Path Id="a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Service.Identity\bin\Debug\netcoreapp3.1\KiraSoft.Application.Service.Identity.dll" />
-    <Path Id="a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Service.Identity/bin/Debug/netcoreapp3.1/KiraSoft.Application.Service.Identity.dll" />
-    <Path Id="b44516b4-c808-417c-85de-ff28fac84012.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.MapperBase\bin\Debug\netcoreapp3.1\KiraSoft.Application.MapperBase.dll" />
-    <Path Id="b44516b4-c808-417c-85de-ff28fac84012.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.MapperBase/bin/Debug/netcoreapp3.1/KiraSoft.Application.MapperBase.dll" />
-    <Path Id="b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Adapters\bin\Debug\netcoreapp3.1\KiraSoft.Application.Adapters.dll" />
-    <Path Id="b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Adapters/bin/Debug/netcoreapp3.1/KiraSoft.Application.Adapters.dll" />
-    <Path Id="b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.IdentityViewModel\bin\Debug\netcoreapp3.1\KiraSoft.Application.IdentityViewModel.dll" />
-    <Path Id="b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.IdentityViewModel/bin/Debug/netcoreapp3.1/KiraSoft.Application.IdentityViewModel.dll" />
-    <Path Id="ca102065-1737-4a05-955a-962a6eb693bc.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Base.ViewModel\bin\Debug\netcoreapp3.1\KiraSoft.Application.Base.ViewModel.dll" />
-    <Path Id="ca102065-1737-4a05-955a-962a6eb693bc.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Base.ViewModel/bin/Debug/netcoreapp3.1/KiraSoft.Application.Base.ViewModel.dll" />
-    <Path Id="ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.IdentityRepository\bin\Debug\netcoreapp3.1\KiraSoft.Domain.IdentityRepository.dll" />
-    <Path Id="ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.IdentityRepository/bin/Debug/netcoreapp3.1/KiraSoft.Domain.IdentityRepository.dll" />
-    <Path Id="d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Services.Indentity.Contracts\bin\Debug\netcoreapp3.1\KiraSoft.Application.Services.Indentity.Contracts.dll" />
-    <Path Id="d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Services.Indentity.Contracts/bin/Debug/netcoreapp3.1/KiraSoft.Application.Services.Indentity.Contracts.dll" />
-    <Path Id="dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.Persistence.dll" />
-    <Path Id="dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.Persistence/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.Persistence.dll" />
-    <Path Id="e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.IdentityRepository\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.IdentityRepository.dll" />
-    <Path Id="e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.IdentityRepository/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.IdentityRepository.dll" />
-    <Path Id="ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.Model.Base\bin\Debug\netcoreapp3.1\KiraSoft.Domain.Model.Base.dll" />
-    <Path Id="ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.Model.Base/bin/Debug/netcoreapp3.1/KiraSoft.Domain.Model.Base.dll" />
-    <Path Id="fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPath" Value="D:\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.RepositoryBase\bin\Debug\netcoreapp3.1\KiraSoft.Domain.RepositoryBase.dll" />
-    <Path Id="fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPathUri" Value="file:///D:/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.RepositoryBase/bin/Debug/netcoreapp3.1/KiraSoft.Domain.RepositoryBase.dll" />
+    <Path Id="a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Service.Identity\bin\Debug\netcoreapp3.1\KiraSoft.Application.Service.Identity.dll" />
+    <Path Id="a73f54b3-bb7b-4cb9-8b03-3be59d5d0a8f.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Service.Identity/bin/Debug/netcoreapp3.1/KiraSoft.Application.Service.Identity.dll" />
+    <Path Id="b44516b4-c808-417c-85de-ff28fac84012.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.MapperBase\bin\Debug\netcoreapp3.1\KiraSoft.Application.MapperBase.dll" />
+    <Path Id="b44516b4-c808-417c-85de-ff28fac84012.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.MapperBase/bin/Debug/netcoreapp3.1/KiraSoft.Application.MapperBase.dll" />
+    <Path Id="b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Adapters\bin\Debug\netcoreapp3.1\KiraSoft.Application.Adapters.dll" />
+    <Path Id="b5d2cf02-a926-42c8-b112-a9b969fde9c1.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Adapters/bin/Debug/netcoreapp3.1/KiraSoft.Application.Adapters.dll" />
+    <Path Id="b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.IdentityViewModel\bin\Debug\netcoreapp3.1\KiraSoft.Application.IdentityViewModel.dll" />
+    <Path Id="b615c6a9-3edc-485b-b877-1ecbfb228bd5.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.IdentityViewModel/bin/Debug/netcoreapp3.1/KiraSoft.Application.IdentityViewModel.dll" />
+    <Path Id="ca102065-1737-4a05-955a-962a6eb693bc.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Base.ViewModel\bin\Debug\netcoreapp3.1\KiraSoft.Application.Base.ViewModel.dll" />
+    <Path Id="ca102065-1737-4a05-955a-962a6eb693bc.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Base.ViewModel/bin/Debug/netcoreapp3.1/KiraSoft.Application.Base.ViewModel.dll" />
+    <Path Id="ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.IdentityRepository\bin\Debug\netcoreapp3.1\KiraSoft.Domain.IdentityRepository.dll" />
+    <Path Id="ce9f5c39-bb2f-4325-98d1-813a4fb38033.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.IdentityRepository/bin/Debug/netcoreapp3.1/KiraSoft.Domain.IdentityRepository.dll" />
+    <Path Id="d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Application.Services.Indentity.Contracts\bin\Debug\netcoreapp3.1\KiraSoft.Application.Services.Indentity.Contracts.dll" />
+    <Path Id="d7afe219-9fb9-4d73-b433-fb95b19880f1.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Application.Services.Indentity.Contracts/bin/Debug/netcoreapp3.1/KiraSoft.Application.Services.Indentity.Contracts.dll" />
+    <Path Id="dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.Persistence.dll" />
+    <Path Id="dadb9023-74c8-426d-9f78-66dabbdfd22c.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.Persistence/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.Persistence.dll" />
+    <Path Id="e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Infrastructure.IdentityRepository\bin\Debug\netcoreapp3.1\KiraSoft.Infrastructure.IdentityRepository.dll" />
+    <Path Id="e83289ea-e3a3-4b13-b3ec-a25e496b23ff.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Infrastructure.IdentityRepository/bin/Debug/netcoreapp3.1/KiraSoft.Infrastructure.IdentityRepository.dll" />
+    <Path Id="ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.Model.Base\bin\Debug\netcoreapp3.1\KiraSoft.Domain.Model.Base.dll" />
+    <Path Id="ee16e30e-0d72-42d3-a6e9-04a8c3fc7d88.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.Model.Base/bin/Debug/netcoreapp3.1/KiraSoft.Domain.Model.Base.dll" />
+    <Path Id="fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPath" Value="C:\Arbol\Proyectos\KiraSoft.Genealogy\KiraSoft.Domain.RepositoryBase\bin\Debug\netcoreapp3.1\KiraSoft.Domain.RepositoryBase.dll" />
+    <Path Id="fa42b2e0-c58b-41a8-9b0a-845f6c934308.OutputPathUri" Value="file:///C:/Arbol/Proyectos/KiraSoft.Genealogy/KiraSoft.Domain.RepositoryBase/bin/Debug/netcoreapp3.1/KiraSoft.Domain.RepositoryBase.dll" />
   </Paths>
 </DirectedGraph>

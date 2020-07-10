@@ -11,9 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\KiraSoft.Application.Base.Service\KiraSoft.Application.Base.Service.csproj" />
     <ProjectReference Include="..\KiraSoft.Application.IdentityViewModel\KiraSoft.Application.IdentityViewModel.csproj" />
     <ProjectReference Include="..\KiraSoft.Application.Services.Indentity.Contracts\KiraSoft.Application.Services.Indentity.Contracts.csproj" />
+    <ProjectReference Include="..\KiraSoft.CrossCutting.Operation\KiraSoft.CrossCutting.Operation.csproj" />
     <ProjectReference Include="..\KiraSoft.Domain.IdentityRepository\KiraSoft.Domain.IdentityRepository.csproj" />
     <ProjectReference Include="..\KiraSoft.Domain.Model.Identity\KiraSoft.Domain.Model.Identity.csproj" />
   </ItemGroup>

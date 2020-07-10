@@ -8,6 +8,9 @@
   <ItemGroup>
     <None Remove="appsettings.Development.json~RF150c4c4.TMP" />
     <None Remove="Areas\Authentication\Controllers\AuthenticationController.cs~RFcb4cec.TMP" />
+    <None Remove="Areas\Authentication\Controllers\UserRegisterController.cs~RF5c1ca96.TMP" />
+    <None Remove="Areas\Authentication\Controllers\UserRegisterController.cs~RF5c4a211.TMP" />
+    <None Remove="Areas\Authentication\Models\UserRegisterViewModel.cs~RF5507d95.TMP" />
   </ItemGroup>
 
   <ItemGroup>

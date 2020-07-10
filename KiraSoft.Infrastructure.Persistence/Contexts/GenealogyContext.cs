@@ -14,14 +14,12 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
         private readonly ILoggerFactory _loggerFactory;
         private readonly IConfiguration _config;
 
+        public DbSet<TokenHistory> TokensHistory { get; set; }
+
         public GenealogyContext(ILoggerFactory loggerFactory, IConfiguration config)
         {
             _loggerFactory = loggerFactory;
             _config = config;
-        }
-
-        public GenealogyContext()
-        {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

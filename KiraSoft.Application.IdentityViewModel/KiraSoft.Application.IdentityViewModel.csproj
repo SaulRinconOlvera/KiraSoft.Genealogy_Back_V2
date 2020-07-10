@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UserRoleViewModel.cs~RF2663acc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\KiraSoft.Application.Base.ViewModel\KiraSoft.Application.Base.ViewModel.csproj" />
   </ItemGroup>
 

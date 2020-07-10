@@ -23,6 +23,7 @@ namespace KiraSoft.Infrastructure.Repositories
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserRoleRepository, UserRoleRepository>();
             services.AddTransient<ILoginRepository, LoginRepository>();
+            services.AddTransient<ITokenHistoryRepository, TokenHistoryRepository>();
         }
     }
 }

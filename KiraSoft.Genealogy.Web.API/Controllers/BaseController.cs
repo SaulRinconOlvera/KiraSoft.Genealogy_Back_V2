@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace KiraSoft.Genealogy.Web.API.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/v1/[controller]/[action]")]
     [ApiController]
     public class BaseController<TViewModel> : ControllerBase, IBaseController<TViewModel>
         where TViewModel : class, IBaseViewModel<int>

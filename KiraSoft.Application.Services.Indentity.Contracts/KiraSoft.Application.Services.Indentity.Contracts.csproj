@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="IUserAppService.cs~RF267608f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\KiraSoft.Application.Base.Service\KiraSoft.Application.Base.Service.csproj" />
     <ProjectReference Include="..\KiraSoft.Application.IdentityViewModel\KiraSoft.Application.IdentityViewModel.csproj" />
   </ItemGroup>

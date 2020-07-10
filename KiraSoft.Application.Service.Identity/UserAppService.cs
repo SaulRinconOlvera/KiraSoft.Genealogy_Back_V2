@@ -1,6 +1,6 @@
-﻿using AutoMapper;
-using KiraSoft.Application.Base.Service;
+﻿using KiraSoft.Application.Base.Service;
 using KiraSoft.Application.IdentityViewModel;
+using KiraSoft.Application.MapperBase;
 using KiraSoft.Application.Services.Indentity.Contracts;
 using KiraSoft.Domain.IdentityRepository;
 using KiraSoft.Domain.Model.Identity;
@@ -11,16 +11,18 @@ namespace KiraSoft.Application.Service.Identity
 {
     public class UserAppService : ApplicationServiceBase<User, UserViewModel, Guid>, IUserAppService
     {
-        public UserAppService(IUserRepository repository, IMapper mapper) : base(mapper) =>
+        public UserAppService(IUserRepository repository,
+            IGenericMapper<User, UserViewModel, Guid>  mapper) : base(mapper) =>
             _repository = repository;
 
-        public async Task<UserViewModel> LoginAsync(string userName, string password)
+        public Task<UserViewModel> LoginAsync(string userName, string password)
         {
-            var entity = await((ILoginRepository)_repository)
-                .LoginAsync(userName, password);
+            throw new NotImplementedException();
+            //var entity = await((ILoginRepository)_repository)
+            //    .LoginAsync(userName, password);
 
-            if (entity is null) return null;
-            return _mapper.GetViewModel(entity);
+            //if (entity is null) return null;
+            //return _mapper.GetViewModel(entity);
         }
 
         //public async Task Logout() =>
