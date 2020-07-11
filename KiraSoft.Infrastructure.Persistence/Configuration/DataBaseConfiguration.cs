@@ -9,8 +9,6 @@ namespace KiraSoft.Infrastructure.Persistence.Configuration
     public static class DataBaseConfiguration
     {
 
-      
-
         public static void Register(IServiceCollection services)
         {
             services.AddDbContext<GenealogyContext>();

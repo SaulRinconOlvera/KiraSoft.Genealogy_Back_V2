@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Linq.Expressions;
 
@@ -11,16 +12,23 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
         IdentityDbContext<User, Role, Guid, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         private readonly IConfiguration _config;
+        private readonly ILoggerFactory _loggerFactory;
+
         public DbSet<TokenHistory> TokensHistory { get; set; }
 
-        public GenealogyContext(IConfiguration config) 
+        public GenealogyContext(IConfiguration config, ILoggerFactory loggerFactory) 
         {
             _config = config;
+            _loggerFactory = loggerFactory;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_config["ConnectionStrings:Genealogy"]);
+
+            if(_config.GetValue<bool>("Application:EnableDatabaseLogging"))
+                optionsBuilder.UseLoggerFactory(_loggerFactory).EnableSensitiveDataLogging(true);
+
             base.OnConfiguring(optionsBuilder);
         }
 

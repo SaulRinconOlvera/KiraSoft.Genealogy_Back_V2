@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 
@@ -25,6 +26,7 @@ namespace KiraSoft.Genealogy.Web.API
         {
             services.AddControllers();
             services.AddSwaggerGen(AddSwagger());
+            services.AddLogging(o => o.AddSerilog(Program.Logger));
 
             Utilities.Token.Configure.ConfigureJWT(services, Configuration);
             RegisterServices.Register(services, Configuration);
@@ -39,7 +41,7 @@ namespace KiraSoft.Genealogy.Web.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -51,6 +53,9 @@ namespace KiraSoft.Genealogy.Web.API
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "JobFinder API");
             });
+
+
+            loggerFactory.AddSerilog();
 
             app.UseHttpsRedirection();
 

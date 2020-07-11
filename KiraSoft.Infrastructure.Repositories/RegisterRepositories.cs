@@ -16,7 +16,7 @@ namespace KiraSoft.Infrastructure.Repositories
             )
         {
             services.AddTransient<IUnitOfWork, UnitOfWork>(
-                (x) => new UnitOfWork(new GenealogyContext(configuration)));
+                (x) => new UnitOfWork(new GenealogyContext(configuration, null)));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
             services.AddTransient<IUserClaimRepository, UserClaimRepository>();
