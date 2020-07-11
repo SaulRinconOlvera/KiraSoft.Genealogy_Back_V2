@@ -8,6 +8,6 @@ namespace KiraSoft.Domain.IdentityRepository
         Task<User> FindUserByNameAsync(string userName);
         Task CreateUserAsync(User user, string password);
         Task<Role> FindRoleByNameAsync(string roleName);
-        Task AddUserToRolAsync(User user, string rolName);
+        Task AddUserToRoleAsync(User user, string rolName);
     }
 }

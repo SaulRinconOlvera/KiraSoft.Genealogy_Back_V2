@@ -22,11 +22,12 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
             _loggerFactory = loggerFactory;
         }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_config["ConnectionStrings:Genealogy"]);
 
-            if(_config.GetValue<bool>("Application:EnableDatabaseLogging"))
+            if (_config.GetValue<bool>("Application:EnableDatabaseLogging"))
                 optionsBuilder.UseLoggerFactory(_loggerFactory).EnableSensitiveDataLogging(true);
 
             base.OnConfiguring(optionsBuilder);
@@ -106,7 +107,6 @@ namespace KiraSoft.Infrastructure.Persistence.Contexts
                 b.HasKey(e => new { e.UserId, e.RoleId });
                 b.HasOne(userRole => userRole.Role).WithMany(role => role.Users).HasForeignKey(userRole => userRole.RoleId);
                 b.HasOne(userRole => userRole.User).WithMany(user => user.Roles).HasForeignKey(userRole => userRole.UserId);
-                b.Property(p => p.Id);
                 b.ToTable("UserRole");
             });
 

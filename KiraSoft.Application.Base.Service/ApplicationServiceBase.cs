@@ -180,7 +180,7 @@ namespace KiraSoft.Application.Base.Service
         private TEntity SetUserOnAdd(TEntity entity, string user)
         {
             entity.CreatedBy = entity.LastModifiedBy = user; entity.Enabled = true;
-            entity.CreationDate = entity.LastModificationDate = DateTime.Now;
+            entity.CreationDate = entity.LastModificationDate = DateTime.UtcNow;
             return entity;
         }
 
@@ -191,7 +191,7 @@ namespace KiraSoft.Application.Base.Service
             {
                 e.Enabled = true;
                 e.CreatedBy = e.LastModifiedBy = user;
-                e.CreationDate = e.LastModificationDate = DateTime.Now;
+                e.CreationDate = e.LastModificationDate = DateTime.UtcNow;
 
             });
 
@@ -201,7 +201,7 @@ namespace KiraSoft.Application.Base.Service
         private static TEntity SetUserOnModify(TEntity entity, string user)
         {
             entity.LastModifiedBy = user;
-            entity.LastModificationDate = DateTime.Now;
+            entity.LastModificationDate = DateTime.UtcNow;
             return entity;
         }
 
@@ -214,7 +214,7 @@ namespace KiraSoft.Application.Base.Service
         private static TEntity SetUserOnDelete(TEntity entity, string user)
         {
             entity.DeletedBy = user;
-            entity.DeletionDate = DateTime.Now;
+            entity.DeletionDate = DateTime.UtcNow;
             entity.Enabled = false;
             return entity;
         }

@@ -43,7 +43,7 @@ namespace KiraSoft.Application.Service.Identity
         }
 
         private Task AddUserToRoleAsync(User user) =>
-            _repository.AddUserToRolAsync(user, _roleName);
+            _repository.AddUserToRoleAsync(user, _roleName);
 
         private async Task<User> CreateNewUserAsync(UserRegisterViewModel userRegisterViewModel)
         {
