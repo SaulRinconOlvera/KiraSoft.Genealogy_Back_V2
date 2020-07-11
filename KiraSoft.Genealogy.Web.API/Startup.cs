@@ -16,7 +16,6 @@ namespace KiraSoft.Genealogy.Web.API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-
         }
 
         public IConfiguration Configuration { get; }
@@ -29,8 +28,6 @@ namespace KiraSoft.Genealogy.Web.API
 
             Utilities.Token.Configure.ConfigureJWT(services, Configuration);
             RegisterServices.Register(services, Configuration);
-
-            
         }
 
         private Action<SwaggerGenOptions> AddSwagger()
