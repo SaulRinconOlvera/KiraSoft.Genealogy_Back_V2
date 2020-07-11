@@ -18,6 +18,7 @@ namespace KiraSoft.Application.Service.Register
             services.AddTransient<IRoleAppService, RoleAppService>();
             services.AddTransient<IUserRoleAppService, UserRoleAppService>();
             services.AddTransient<IUserLoginAppServicce, UserLoginAppService>();
+            services.AddTransient<IUserRegisterAppService, UserRegisterAppService>();
 
             services.AddTransient<IGenericMapper<User, UserViewModel, Guid>, GenericMapper<User, UserViewModel, Guid>>();
             services.AddTransient<IGenericMapper<UserRole, UserRoleViewModel, Guid>, GenericMapper<UserRole, UserRoleViewModel, Guid>>();

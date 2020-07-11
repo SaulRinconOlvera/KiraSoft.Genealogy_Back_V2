@@ -20,8 +20,8 @@ namespace KiraSoft.Application.Service.Identity
         private readonly string _confirmEmailMessage = "Must be confirm your email account.";
         private readonly IConfiguration _configuration;
 
-        private ILoginRepository _repository;
-        private IGenericMapper<User, UserViewModel, Guid> _mapper;
+        private readonly ILoginRepository _repository;
+        private readonly IGenericMapper<User, UserViewModel, Guid> _mapper;
 
         public UserLoginAppService(
             ILoginRepository repository, 
@@ -122,8 +122,6 @@ namespace KiraSoft.Application.Service.Identity
             if (user is null)
                 throw new BusinessException(_userWrongMessage, FailureCode.UnauthorizedAccess);
         }
-
-
 
         public Task Logout()
         {

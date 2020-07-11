@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
@@ -15,6 +16,7 @@ namespace KiraSoft.Genealogy.Web.API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -27,6 +29,8 @@ namespace KiraSoft.Genealogy.Web.API
 
             Utilities.Token.Configure.ConfigureJWT(services, Configuration);
             RegisterServices.Register(services, Configuration);
+
+            
         }
 
         private Action<SwaggerGenOptions> AddSwagger()

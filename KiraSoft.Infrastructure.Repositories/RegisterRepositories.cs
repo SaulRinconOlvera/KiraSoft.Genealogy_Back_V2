@@ -12,10 +12,11 @@ namespace KiraSoft.Infrastructure.Repositories
     {
         public static void Register(
             IServiceCollection services, 
-            IConfiguration configuration)
+            IConfiguration configuration
+            )
         {
             services.AddTransient<IUnitOfWork, UnitOfWork>(
-                (x) => new UnitOfWork(new GenealogyContext(null, configuration) ));
+                (x) => new UnitOfWork(new GenealogyContext(configuration)));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
             services.AddTransient<IUserClaimRepository, UserClaimRepository>();
@@ -24,6 +25,7 @@ namespace KiraSoft.Infrastructure.Repositories
             services.AddTransient<IUserRoleRepository, UserRoleRepository>();
             services.AddTransient<ILoginRepository, LoginRepository>();
             services.AddTransient<ITokenHistoryRepository, TokenHistoryRepository>();
+            services.AddTransient<IUserRegisterRepository, UserRegisterRepository>();
         }
     }
 }

@@ -1,21 +1,23 @@
-﻿using KiraSoft.Application.Base.ViewModel;
-using KiraSoft.Application.IdentityViewModel;
+﻿using KiraSoft.Application.IdentityViewModel;
 using KiraSoft.Application.Services.Indentity.Contracts;
 using KiraSoft.CrossCutting.Operation.Executor;
-using KiraSoft.CrossCutting.Operation.Transaction.Contracts;
 using KiraSoft.Genealogy.Web.API.Areas.Authentication.Models;
+using KiraSoft.Genealogy.Web.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
 {
     [Route("api/v1/[controller]/[action]")]
     [ApiController]
-    public class AuthenticationController : Controller
+    public class AuthenticationController : BaseController
     {
         private readonly IUserLoginAppServicce _service;
 
-        public AuthenticationController(IUserLoginAppServicce service) =>
+        public AuthenticationController(
+            ILogger<AuthenticationController> logger,
+            IUserLoginAppServicce service) : base(logger) =>
             _service = service;
 
 		[HttpPost]
@@ -26,22 +28,8 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
             async Task<UserViewModel> predicate() =>
                 await _service.LoginAsync(viewModel.UserName, viewModel.Password);
 
-            var result = await SafeExecutor<UserViewModel>.ExecAsync(predicate);
+            var result = await SafeExecutor<UserViewModel>.ExecAsync(predicate, _logger);
 			return ProcessResponse(result);
 		}
-
-        private IActionResult ProcessResponse<T>(IAnswerBase<T> response, bool isPost = false) where T : class
-        {
-            if (response.Success)
-            {
-                if (isPost)
-                    return new CreatedAtRouteResult($"Get{GetControllerName()}",
-                        new { id = ((IBaseViewModel<int>)response.PayLoad).Id }, response);
-                else return Ok(response);
-            }
-            else return BadRequest(response);
-        }
-        private string GetControllerName() =>
-            ControllerContext.RouteData.Values["controller"].ToString();
     }
 }

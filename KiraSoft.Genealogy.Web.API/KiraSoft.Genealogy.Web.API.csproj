@@ -28,5 +28,9 @@
     <ProjectReference Include="..\KiraSoft.Register.Services\KiraSoft.Register.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 
 </Project>

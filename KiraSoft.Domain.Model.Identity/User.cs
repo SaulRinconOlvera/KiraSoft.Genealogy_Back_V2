@@ -23,6 +23,12 @@ namespace KiraSoft.Domain.Model.Identity
         public string PersonName { get; set; }
 
         [StringLength(128)]
+        public string FirstFamilyName { get; set; }
+
+        [StringLength(128)]
+        public string SecondFamilyName { get; set; }
+
+        [StringLength(128)]
         public string Alias { get; set; }
 
         [StringLength(128)]
