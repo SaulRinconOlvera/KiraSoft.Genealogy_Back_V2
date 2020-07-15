@@ -1,3 +1,4 @@
+using KiraSoft.CrossCutting.Mailer.Register;
 using KiraSoft.Register.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,7 @@ namespace KiraSoft.Genealogy.Web.API
 
             Utilities.Token.Configure.ConfigureJWT(services, Configuration);
             RegisterServices.Register(services, Configuration);
+            MailerRegister.Register(Configuration);
         }
 
         private Action<SwaggerGenOptions> AddSwagger()

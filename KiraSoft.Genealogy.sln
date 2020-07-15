@@ -19,11 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Domain.RepositoryB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Infrastructure.RepositoryBase", "KiraSoft.Infrastructure.RepositoryBase\KiraSoft.Infrastructure.RepositoryBase.csproj", "{0C4261B2-F116-4EAB-97A1-E5BC0EF7705A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Diagrams", "0 - Diagrams", "{8D6C7FA1-BBC9-4713-8BF0-941FD887F841}"
-	ProjectSection(SolutionItems) = preProject
-		Application_Diagram.dgml = Application_Diagram.dgml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2.2 - Model", "1.2.2 - Model", "{2DC4261F-8A4E-4158-AB49-1BB7D0C1E635}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Domain.Model.Identity", "KiraSoft.Domain.Model.Identity\KiraSoft.Domain.Model.Identity.csproj", "{6B83DEB8-3F1C-49B5-B5E3-C23F1CF6EBFC}"
@@ -91,6 +86,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.6 - Register", "1.6 - Register", "{38D3165F-1276-4971-B7BC-ADFA8625BF7F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KiraSoft.Register.Services", "KiraSoft.Register.Services\KiraSoft.Register.Services.csproj", "{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Diagrams", "0 - Diagrams", "{96302C1C-8C5D-4691-813A-E127E39DFD53}"
+	ProjectSection(SolutionItems) = preProject
+		Application_Diagram.dgml = Application_Diagram.dgml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.2 - Mailer", "1.5.2 - Mailer", "{5F45830F-D621-48FB-87C1-ECA3B4FD799F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiraSoft.CrossCutting.Mailer", "KiraSoft.CrossCutting.Mailer\KiraSoft.CrossCutting.Mailer.csproj", "{0DC24D68-557A-484D-A91E-052C82930F02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -178,6 +182,10 @@ Global
 		{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{219B708F-0A5C-4837-9E55-9C48F2BE7DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC24D68-557A-484D-A91E-052C82930F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC24D68-557A-484D-A91E-052C82930F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC24D68-557A-484D-A91E-052C82930F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC24D68-557A-484D-A91E-052C82930F02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -223,6 +231,8 @@ Global
 		{79474D07-72C5-4DF8-9D10-3165057A003B} = {372ACB43-C5CD-4E55-9CBB-6C5EB1762E2C}
 		{38D3165F-1276-4971-B7BC-ADFA8625BF7F} = {25A3BA03-459D-4859-B12A-C3A2D42C950D}
 		{219B708F-0A5C-4837-9E55-9C48F2BE7DA0} = {38D3165F-1276-4971-B7BC-ADFA8625BF7F}
+		{5F45830F-D621-48FB-87C1-ECA3B4FD799F} = {C428CCB8-8EE0-4134-85C9-B839CA76A261}
+		{0DC24D68-557A-484D-A91E-052C82930F02} = {5F45830F-D621-48FB-87C1-ECA3B4FD799F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5103347C-CC8A-459F-AD4A-7905228DA71E}

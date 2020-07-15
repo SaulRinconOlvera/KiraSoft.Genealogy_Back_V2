@@ -30,6 +30,7 @@
     <ProjectReference Include="..\KiraSoft.Application.Base.Service\KiraSoft.Application.Base.Service.csproj" />
     <ProjectReference Include="..\KiraSoft.Application.Base.ViewModel\KiraSoft.Application.Base.ViewModel.csproj" />
     <ProjectReference Include="..\KiraSoft.Application.Services.Indentity.Contracts\KiraSoft.Application.Services.Indentity.Contracts.csproj" />
+    <ProjectReference Include="..\KiraSoft.CrossCutting.Mailer\KiraSoft.CrossCutting.Mailer.csproj" />
     <ProjectReference Include="..\KiraSoft.CrossCutting.Operation\KiraSoft.CrossCutting.Operation.csproj" />
     <ProjectReference Include="..\KiraSoft.Register.Services\KiraSoft.Register.Services.csproj" />
   </ItemGroup>
