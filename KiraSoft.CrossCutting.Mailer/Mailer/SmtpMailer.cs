@@ -1,6 +1,8 @@
 ﻿using KiraSoft.CrossCutting.Mailer.Mailer.Contract;
-using KiraSoft.CrossCutting.Mailer.Mailer.Model;
 using KiraSoft.CrossCutting.Mailer.Message.Contract;
+using KiraSoft.CrossCutting.Mailer.Register;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
@@ -12,22 +14,30 @@ namespace KiraSoft.CrossCutting.Mailer.Mailer
         private SmtpClient _server;
         private IMailMessage _message;
 
-        internal SmtpMailer(SmtpConfigurationViewModel viewModel) 
+        internal SmtpMailer(string configuration)
         {
-            _server = GetServer(viewModel);
+            ValidateConfiguration(configuration);
+            _server = GetServer(configuration);
         }
 
-        private SmtpClient GetServer(SmtpConfigurationViewModel viewModel)
+        private SmtpClient GetServer(string configuration)
         {
-            return new SmtpClient(viewModel.Host, viewModel.Port)
+            return new SmtpClient(
+                GetValue<string>($"{configuration}:Host"),
+                GetValue<int>($"{configuration}:Port"))
             {
-                EnableSsl = viewModel.EnableSsl,
+                EnableSsl = GetValue<bool>($"{configuration}:EnableSsl"),
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(viewModel.User, viewModel.Password),
+                Credentials = new NetworkCredential(
+                    GetValue<string>($"{configuration}:User"),
+                     GetValue<string>($"{configuration}:Password")),
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 Timeout = 20000
             };
         }
+
+        private static T GetValue<T>(string key) =>
+            MailerRegister.Configuration.GetValue<T>($"SmtpConfiguration:{key}");
 
         public void SendEmail(IMailMessage message)
         {
@@ -47,5 +57,18 @@ namespace KiraSoft.CrossCutting.Mailer.Mailer
 
         private string GetTo() =>
             string.Join(";", _message.To);
+
+        private static void ValidateConfiguration(string configuration)
+        {
+            if (string.IsNullOrWhiteSpace(configuration))
+                throw new ArgumentNullException("ConfigurationName");
+
+            if (MailerRegister.Configuration is null)
+                throw new NullReferenceException("IConfiguration");
+
+            var section = MailerRegister.Configuration.GetSection($"SmtpConfiguration:{configuration}");
+            if (section is null)
+                throw new NullReferenceException(configuration);
+        }
     }
 }
