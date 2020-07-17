@@ -15,6 +15,7 @@ namespace KiraSoft.Infrastructure.IdentityRepository
         private readonly string _userAreBlokedMessage = "The user are blocked.";
         private readonly string _accessNotAllowedMessage = "The acces is not allowed.";
 
+
         public async Task<User> FindUserByName(string userName) =>
             await DataBaseConfiguration.UserManager.FindByNameAsync(userName);
 

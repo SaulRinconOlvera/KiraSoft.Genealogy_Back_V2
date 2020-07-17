@@ -3,9 +3,6 @@ using KiraSoft.CrossCutting.Operation.Transaction.Contracts;
 using KiraSoft.CrossCutting.Operation.Transaction.Implementation;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace KiraSoft.CrossCutting.Operation.Executor

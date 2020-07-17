@@ -1,7 +1,10 @@
 ﻿using KiraSoft.Domain.Model.Identity;
 using KiraSoft.Infrastructure.Persistence.Contexts;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System;
 
 namespace KiraSoft.Infrastructure.Persistence.Configuration
@@ -9,22 +12,54 @@ namespace KiraSoft.Infrastructure.Persistence.Configuration
     public static class DataBaseConfiguration
     {
 
-        public static void Register(IServiceCollection services)
+        private static DbContextOptionsBuilder<GenealogyContext> _contextOptions;
+        public static DbContextOptionsBuilder<GenealogyContext> 
+            GetOptionsBuilder(IConfiguration configuration, ILoggerFactory loggerFactory)
         {
-            services.AddDbContext<GenealogyContext>();
+            if (_contextOptions is null) 
+            {
+                _contextOptions = new DbContextOptionsBuilder<GenealogyContext>()
+                            .UseSqlServer(configuration["ConnectionStrings:Genealogy"]);
 
-            services.AddIdentity<User, Role>(options =>
+                if (configuration.GetValue<bool>("Application:EnableDatabaseLogging"))
+                    _contextOptions.UseLoggerFactory(loggerFactory).EnableSensitiveDataLogging(true);
+            }
+            return _contextOptions;
+        }
+
+        private static IdentityOptions GetIdentityConfiguration()
+        {
+            return new IdentityOptions()
+            {
+                Password = new PasswordOptions
                 {
-                    options.Password.RequireDigit = true;
-                    options.Password.RequireLowercase = true;
-                    options.Password.RequireNonAlphanumeric = true;
-                    options.Password.RequireUppercase = true;
-                    options.Password.RequiredLength = 8;
-                    options.User.RequireUniqueEmail = true;
-                    options.SignIn.RequireConfirmedEmail = true;
-                    options.Lockout.MaxFailedAccessAttempts = 5;
-                    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
-                })
+                    RequireDigit = true,
+                    RequireLowercase = true,
+                    RequireNonAlphanumeric = true,
+                    RequireUppercase = true,
+                    RequiredLength = 8
+                },
+                Lockout = new LockoutOptions
+                {
+                    MaxFailedAccessAttempts = 5,
+                    DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15)
+                },
+                SignIn = new SignInOptions
+                {
+                    RequireConfirmedEmail = true,
+                    RequireConfirmedAccount = true
+                },
+                User = new UserOptions
+                {
+                    RequireUniqueEmail = true
+                }
+            };
+        }
+
+        public static void Register(IServiceCollection services, IConfiguration configuration, ILoggerFactory loggerFactory)
+        {
+            services.AddDbContext<GenealogyContext>(o => GetOptionsBuilder(configuration, loggerFactory))
+                .AddIdentity<User, Role>(o => GetIdentityConfiguration())
                 .AddEntityFrameworkStores<GenealogyContext>()
                 .AddDefaultTokenProviders();
 

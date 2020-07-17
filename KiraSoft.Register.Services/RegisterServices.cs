@@ -4,7 +4,6 @@ using KiraSoft.Infrastructure.Persistence.Configuration;
 using KiraSoft.Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace KiraSoft.Register.Services
 {
@@ -15,7 +14,7 @@ namespace KiraSoft.Register.Services
         {
             MapperServices.Register(services);
             ApplicationServices.Register(services);
-            DataBaseConfiguration.Register(services);
+            DataBaseConfiguration.Register(services, configuration, null);
             RegisterRepositories.Register(services, configuration);
         }
     }

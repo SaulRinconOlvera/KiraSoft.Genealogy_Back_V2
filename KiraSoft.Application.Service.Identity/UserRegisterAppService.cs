@@ -33,7 +33,18 @@ namespace KiraSoft.Application.Service.Identity
             User user = await CreateNewUserAsync(userRegisterViewModel);
             await SetToRolAsync(user);
 
-            return _mapper.GetViewModel(user);;
+            return await GenerarteEmailConfirmationLinkgAsync(user);
+        }
+        public async Task ValidateEmailConfimationLinkAsync(Guid userId, string token) 
+        {
+            ValidateParameters(userId, token);
+            await _repository.ValidateEmailConfigurationLinkAsync(userId, token);
+        }
+
+        private async Task<UserViewModel> GenerarteEmailConfirmationLinkgAsync(User user)
+        {
+            user.ConfirmationLink = await _repository.GenerarteEmailConfirmationLinkgAsync(user);
+            return _mapper.GetViewModel(user);
         }
 
         private async Task SetToRolAsync(User user)
@@ -79,6 +90,15 @@ namespace KiraSoft.Application.Service.Identity
             User user = await _repository.FindUserByNameAsync(userRegisterViewModel.Email);
             if (user != null)
                 throw new BusinessException(_userAlreadyExistsMessage, FailureCode.AlreadyExist);
+        }
+
+        private void ValidateParameters(Guid userId, string token)
+        {
+            if (userId == null)
+                throw new ArgumentNullException("UserId");
+
+            if (string.IsNullOrWhiteSpace(token))
+                throw new ArgumentNullException("Token");
         }
     }
 }

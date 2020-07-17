@@ -52,8 +52,8 @@ namespace KiraSoft.Application.Service.Identity
         private UserViewModel GetModelForModify(User entity)
         {
             var model = _mapper.GetViewModel(entity);
-            model.PasswordHash = entity.PasswordHash;
-            model.SecurityStamp = entity.SecurityStamp;
+            //model.PasswordHash = entity.PasswordHash;
+            //model.SecurityStamp = entity.SecurityStamp;
             return model;
         }
 

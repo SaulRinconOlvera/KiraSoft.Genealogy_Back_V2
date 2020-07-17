@@ -1,6 +1,7 @@
 ﻿using KiraSoft.Domain.IdentityRepository;
 using KiraSoft.Domain.RepositoryBase.Contracts;
 using KiraSoft.Infrastructure.IdentityRepository;
+using KiraSoft.Infrastructure.Persistence.Configuration;
 using KiraSoft.Infrastructure.Persistence.Contexts;
 using KiraSoft.Infrastructure.RepositoryBase.Implementation;
 using Microsoft.Extensions.Configuration;
@@ -10,13 +11,11 @@ namespace KiraSoft.Infrastructure.Repositories
 {
     public class RegisterRepositories
     {
-        public static void Register(
-            IServiceCollection services, 
-            IConfiguration configuration
-            )
+        public static void Register(IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IUnitOfWork, UnitOfWork>(
-                (x) => new UnitOfWork(new GenealogyContext(configuration, null)));
+                (x) => new UnitOfWork(new GenealogyContext(
+                    DataBaseConfiguration.GetOptionsBuilder(configuration, null).Options)));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
             services.AddTransient<IUserClaimRepository, UserClaimRepository>();

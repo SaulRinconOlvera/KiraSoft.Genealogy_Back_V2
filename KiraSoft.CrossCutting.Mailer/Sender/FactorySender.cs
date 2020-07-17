@@ -13,7 +13,6 @@ namespace KiraSoft.CrossCutting.Mailer.Sender
             string configuration = null) 
         {
             IMailer mailer = GetMailer(sender, configuration);
-
             mailer.SendEmail(message);
         }
 
