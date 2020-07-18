@@ -1,4 +1,5 @@
 ﻿using KiraSoft.CrossCutting.Operation.Transaction.Contracts;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -7,32 +8,43 @@ namespace KiraSoft.CrossCutting.Operation.Transaction.Implementation
     public class ErrorAnswer<T> : IErrorAnswer<T> where T : class
     {
         public ErrorAnswer(string message) { Message = message; PayLoad = null; }
-        public ErrorAnswer(T data)
+
+        [JsonConstructor]
+        private ErrorAnswer() { }
+        
+        public ErrorAnswer(T payload)
         {
-            PayLoad = data;
+            PayLoad = payload;
             Message = "Error at processing request.";
         }
-        public ErrorAnswer(string message, T data)
+
+        public ErrorAnswer(string message, T payload)
         {
-            PayLoad = data;
+            PayLoad = payload;
             Message = message;
         }
-        public ErrorAnswer(string message, T data, Exception ex)
+
+        public ErrorAnswer(string message, T payload, Exception ex)
         {
-            PayLoad = data;
+            PayLoad = payload;
             Message = message;
 
             ProcessException(ex);
         }
+
         public ErrorAnswer(Exception ex) { ProcessException(ex); }
 
+        [JsonProperty("success")]
         public bool Success => false;
 
-        public string Message { get; private set; }
+        [JsonProperty("message")]
+        public string Message { get; set; }
 
-        public T PayLoad { get; private set; }
+        [JsonProperty("payLoad")]
+        public T PayLoad { get; set; }
 
-        public IList<ErrorViewModel> ErrorList { get; private set; }
+        [JsonProperty("errorList")]
+        public IList<ErrorViewModel> ErrorList { get; set; }
 
         private void ProcessException(Exception ex)
         {

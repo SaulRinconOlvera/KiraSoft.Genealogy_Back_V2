@@ -1,4 +1,5 @@
 ﻿using KiraSoft.CrossCutting.Operation.Transaction.Contracts;
+using Newtonsoft.Json;
 
 namespace KiraSoft.CrossCutting.Operation.Transaction.Implementation
 {
@@ -10,11 +11,13 @@ namespace KiraSoft.CrossCutting.Operation.Transaction.Implementation
         public SuccessfullyAnswer(string messaje, T data)
         { Message = messaje; PayLoad = data; }
 
-
+        [JsonProperty("success")]
         public bool Success => true;
 
-        public string Message { get; private set; }
+        [JsonProperty("message")]
+        public string Message { get; set; }
 
-        public T PayLoad { get; private set; }
+        [JsonProperty("payLoad")]
+        public T PayLoad { get; set; }
     }
 }

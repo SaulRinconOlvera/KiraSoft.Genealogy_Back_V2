@@ -18,16 +18,11 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
     public class UserRegisterController : BaseController
     {
         private readonly IUserRegisterAppService _service;
-        private readonly IConfiguration _configuration; 
 
         public UserRegisterController(
             IConfiguration configuration,
             ILogger<UserRegisterController> logger,
-            IUserRegisterAppService service) : base(logger)
-        {
-            _service = service;
-            _configuration = configuration;
-        }
+            IUserRegisterAppService service) : base(logger) => _service = service;
 
 
         [HttpPost]
@@ -56,7 +51,6 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
 
             FactorySender.SendEmail(message, MailSenderEnum.SMTP, "Gmail_Test1");
         }
-
 
         [HttpGet]
         [ActionName("EmailConfirmation")]

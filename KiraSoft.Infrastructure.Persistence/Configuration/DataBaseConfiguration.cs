@@ -27,6 +27,9 @@ namespace KiraSoft.Infrastructure.Persistence.Configuration
             return _contextOptions;
         }
 
+        public static void SetOptionsBuilder(DbContextOptionsBuilder<GenealogyContext> builder)  =>
+            _contextOptions = builder;
+
         private static IdentityOptions GetIdentityConfiguration()
         {
             return new IdentityOptions()

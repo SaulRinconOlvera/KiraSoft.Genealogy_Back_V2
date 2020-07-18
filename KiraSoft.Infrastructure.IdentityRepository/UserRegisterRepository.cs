@@ -49,7 +49,14 @@ namespace KiraSoft.Infrastructure.IdentityRepository
         public async Task ValidateEmailConfigurationLinkAsync(Guid userId, string token)
         {
             var user = await FindUserByIdAsync(userId);
+            ValidateAlreadyConfirmatedEmail(user);
             await ConfirmUserEmailAsync(user, token);
+        }
+
+        private void ValidateAlreadyConfirmatedEmail(User user)
+        {
+            if (user.EmailConfirmed)
+                throw new BusinessException("Email already confirmed.", FailureCode.InvalidTransaction);
         }
 
         private async Task ConfirmUserEmailAsync(User user, string token)
