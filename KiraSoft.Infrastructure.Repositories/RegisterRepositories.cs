@@ -2,6 +2,7 @@
 using KiraSoft.Domain.RepositoryBase.Contracts;
 using KiraSoft.Infrastructure.IdentityRepository;
 using KiraSoft.Infrastructure.Persistence.Configuration;
+using KiraSoft.Infrastructure.Persistence.Configuration.Contracts;
 using KiraSoft.Infrastructure.Persistence.Contexts;
 using KiraSoft.Infrastructure.RepositoryBase.Implementation;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ namespace KiraSoft.Infrastructure.Repositories
             services.AddTransient<IUnitOfWork, UnitOfWork>(
                 (x) => new UnitOfWork(new GenealogyContext(
                     DataBaseConfiguration.GetOptionsBuilder(configuration, null).Options)));
+            services.AddTransient<IIdentityConfiguration, IdentityConfiguration>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
             services.AddTransient<IUserClaimRepository, UserClaimRepository>();

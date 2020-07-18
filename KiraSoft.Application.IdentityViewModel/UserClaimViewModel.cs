@@ -1,4 +1,5 @@
 ﻿using KiraSoft.Application.Base.ViewModel;
+using System;
 
 namespace KiraSoft.Application.IdentityViewModel
 {
@@ -6,7 +7,7 @@ namespace KiraSoft.Application.IdentityViewModel
     {
         public string ClaimType { get; set; }
         public string ClaimValue { get; set; }
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
         public virtual UserViewModel User { get; set; }
     }
 }

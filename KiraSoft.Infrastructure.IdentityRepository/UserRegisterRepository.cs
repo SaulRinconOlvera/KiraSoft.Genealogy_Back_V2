@@ -3,6 +3,7 @@ using KiraSoft.CrossCutting.Operation.Exceptions.Enum;
 using KiraSoft.Domain.IdentityRepository;
 using KiraSoft.Domain.Model.Identity;
 using KiraSoft.Infrastructure.Persistence.Configuration;
+using KiraSoft.Infrastructure.Persistence.Configuration.Contracts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
 using System;
@@ -15,21 +16,28 @@ namespace KiraSoft.Infrastructure.IdentityRepository
     public class UserRegisterRepository : IUserRegisterRepository
     {
         private readonly IUserRoleRepository _repository;
+        private readonly IIdentityConfiguration _identityConfiguration;
 
-        public UserRegisterRepository(IUserRoleRepository repository) => 
+        public UserRegisterRepository(
+            IUserRoleRepository repository,
+            IIdentityConfiguration identityConfiguration) 
+        {
             _repository = repository;
+            _identityConfiguration = identityConfiguration;
+        }
+            
 
         public async Task CreateUserAsync(User user, string password)
         {
-            var result = await DataBaseConfiguration.UserManager.CreateAsync(user, password);
+            var result = await _identityConfiguration.UserManager.CreateAsync(user, password);
             CheckForErrorResult(result);
         }
 
         public async Task<User> FindUserByNameAsync(string userName) =>
-           await DataBaseConfiguration.UserManager.FindByNameAsync(userName);
+           await _identityConfiguration.UserManager.FindByNameAsync(userName);
 
         public async Task<Role> FindRoleByNameAsync(string roleName) =>
-            await DataBaseConfiguration.RoleManager.FindByNameAsync(roleName);
+            await _identityConfiguration.RoleManager.FindByNameAsync(roleName);
 
         public async Task AddUserToRoleAsync(User user, string roleName)
         {
@@ -42,7 +50,7 @@ namespace KiraSoft.Infrastructure.IdentityRepository
 
         public async Task<string> GenerarteEmailConfirmationLinkgAsync(User user)
         {
-            var token = await DataBaseConfiguration.UserManager.GenerateEmailConfirmationTokenAsync(user);
+            var token = await _identityConfiguration.UserManager.GenerateEmailConfirmationTokenAsync(user);
             return WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
         }
 
@@ -64,7 +72,7 @@ namespace KiraSoft.Infrastructure.IdentityRepository
             var tokenDecodedBytes = WebEncoders.Base64UrlDecode(token);
             var tokenDecoded = Encoding.UTF8.GetString(tokenDecodedBytes);
 
-            var result = await DataBaseConfiguration.UserManager.ConfirmEmailAsync(user, tokenDecoded);
+            var result = await _identityConfiguration.UserManager.ConfirmEmailAsync(user, tokenDecoded);
             ValidateResult(result);
         }
 
@@ -82,7 +90,7 @@ namespace KiraSoft.Infrastructure.IdentityRepository
 
         public async Task<User> FindUserByIdAsync(Guid userId)
         {
-            User user = await DataBaseConfiguration.UserManager.FindByIdAsync(userId.ToString());
+            User user = await _identityConfiguration.UserManager.FindByIdAsync(userId.ToString());
             if (user is null) 
                 throw new BusinessException("User Id is invalid", FailureCode.NotFound);
 
@@ -97,7 +105,7 @@ namespace KiraSoft.Infrastructure.IdentityRepository
 
         private async Task<Role> GetRoleByNameAsync(string roleName)
         {
-            var role = await DataBaseConfiguration.RoleManager.FindByNameAsync(roleName);
+            var role = await _identityConfiguration.RoleManager.FindByNameAsync(roleName);
             if (role is null) throw new BusinessException("The role isn't exists", FailureCode.ErrorAtCreateUser);
             return role;
         }

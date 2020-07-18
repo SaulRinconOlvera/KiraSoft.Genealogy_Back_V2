@@ -18,12 +18,15 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
     public class UserRegisterController : BaseController
     {
         private readonly IUserRegisterAppService _service;
+        private readonly IConfiguration _configuration;
 
         public UserRegisterController(
             IConfiguration configuration,
             ILogger<UserRegisterController> logger,
-            IUserRegisterAppService service) : base(logger) => _service = service;
-
+            IUserRegisterAppService service) : base(logger) {
+            _service = service;
+            _configuration = configuration;
+        } 
 
         [HttpPost]
         public async Task<IActionResult> UserRegister([FromBody] UserRegisterViewModel viewModel)
@@ -34,11 +37,10 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
                 await _service.ReguisterAsync(viewModel);
 
             var result = await SafeExecutor<UserViewModel>.ExecAsync(predicate, _logger);
-            if (result.Success)
+            if (result.Success && !_configuration.GetValue<bool>("Application:TestingMode"))
                 SendEmail(result.PayLoad);
 
             return ProcessResponse(result);
-
         }
 
         private void SendEmail(UserViewModel payLoad)

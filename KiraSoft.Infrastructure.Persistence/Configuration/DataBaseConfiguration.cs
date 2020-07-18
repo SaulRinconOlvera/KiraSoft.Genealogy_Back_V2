@@ -11,7 +11,6 @@ namespace KiraSoft.Infrastructure.Persistence.Configuration
 {
     public static class DataBaseConfiguration
     {
-
         private static DbContextOptionsBuilder<GenealogyContext> _contextOptions;
         public static DbContextOptionsBuilder<GenealogyContext> 
             GetOptionsBuilder(IConfiguration configuration, ILoggerFactory loggerFactory)
@@ -65,14 +64,6 @@ namespace KiraSoft.Infrastructure.Persistence.Configuration
                 .AddIdentity<User, Role>(o => GetIdentityConfiguration())
                 .AddEntityFrameworkStores<GenealogyContext>()
                 .AddDefaultTokenProviders();
-
-            UserManager = services.BuildServiceProvider().GetService<UserManager<User>>();
-            SignManager = services.BuildServiceProvider().GetService<SignInManager<User>>();
-            RoleManager = services.BuildServiceProvider().GetService<RoleManager<Role>>();
         }
-
-        public static UserManager<User> UserManager { get; private set; }
-        public static SignInManager<User> SignManager { get; private set; }
-        public static RoleManager<Role> RoleManager { get; private set; }
     }
 }
