@@ -5,7 +5,7 @@ using KiraSoft.CrossCutting.Mailer.Message.Contract;
 
 namespace KiraSoft.CrossCutting.Mailer.Sender
 {
-    public static class FactorySender
+    internal static class FactorySender
     {
         public static void SendEmail(
             IMailMessage message, 

@@ -21,7 +21,7 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
             _service = service;
 
 		[HttpPost]
-		public async Task<IActionResult> Login([FromBody] LoginViewModel viewModel)
+        public async Task<IActionResult> Login([FromBody] LoginViewModel viewModel)
 		{
 			if (!ModelState.IsValid) return BadRequest(ModelState);
 

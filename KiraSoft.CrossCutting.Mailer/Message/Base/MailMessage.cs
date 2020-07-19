@@ -1,6 +1,5 @@
 ﻿using KiraSoft.CrossCutting.Mailer.Message.Contract;
 using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace KiraSoft.CrossCutting.Mailer.Message.Base
@@ -18,10 +17,10 @@ namespace KiraSoft.CrossCutting.Mailer.Message.Base
         private Regex _regex = new Regex(_pattern);
 
 
-        public string From { get; internal protected set; }
-        public IList<string> To { get; internal protected set; }
-        public string Subject { get; internal protected set; }
-        public string Message { get; internal protected set; }
+        public string From { get;  protected set; }
+        public string To { get; protected set; }
+        public string Subject { get;  protected set; }
+        public string Message { get;  protected set; }
 
         public string GetMessage()
         {
@@ -29,15 +28,7 @@ namespace KiraSoft.CrossCutting.Mailer.Message.Base
             return Message;
         }
 
-        public MailMessage(string from , string to, string subject) 
-        {
-            ValidateParameters(from, to, subject);
-
-            To = new List<string>();
-            From = from; To.Add(to); Subject = subject;
-        }
-
-        public MailMessage(string from, List<string> to, string subject)
+        public MailMessage(string from, string to, string subject)
         {
             ValidateParameters(from, "to", subject);
             ValidateTo(to);
@@ -50,7 +41,7 @@ namespace KiraSoft.CrossCutting.Mailer.Message.Base
         {
             ValidateEmailForm(From);
 
-            foreach (var email in To)
+            foreach (var email in To.Split(";"))
                 ValidateEmailForm(email);
         }
 
@@ -61,9 +52,9 @@ namespace KiraSoft.CrossCutting.Mailer.Message.Base
                 throw new FormatException(email);
         }
 
-        private void ValidateTo(List<string> to)
+        private void ValidateTo(string to)
         {
-            if (to is null || to.Count == 0)
+            if (to is null)
                 throw new ArgumentNullException("To");
         }
 
@@ -79,7 +70,7 @@ namespace KiraSoft.CrossCutting.Mailer.Message.Base
                 throw new ArgumentNullException("Subject");
         }
 
-        internal protected virtual void ProcessMessage() { ValidateInformation(); }
-        internal protected virtual void ValidateInformation() { }
+         protected virtual void ProcessMessage() { ValidateInformation(); }
+         protected virtual void ValidateInformation() { }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using KiraSoft.Application.IdentityViewModel;
 using KiraSoft.Application.Services.Indentity.Contracts;
+using KiraSoft.CrossCutting.Jobs;
 using KiraSoft.CrossCutting.Mailer.Enum;
 using KiraSoft.CrossCutting.Mailer.Message;
 using KiraSoft.CrossCutting.Mailer.Sender;
+using KiraSoft.CrossCutting.Mailer.Sender.Contracts;
 using KiraSoft.CrossCutting.Operation.Executor;
 using KiraSoft.Genealogy.Web.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
@@ -51,7 +53,7 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
                 ConfirmationLink = $"https://localhost:44391/api/v1/UserRegister/EmailConfirmation?userId={payLoad.Id}&token={payLoad.ConfirmationLink}"
             };
 
-            FactorySender.SendEmail(message, MailSenderEnum.SMTP, "Gmail_Test1");
+            ApplicationJobs.Enqueue<IEmailSender>(x => x.SendEmail(message, MailSenderEnum.SMTP, "Gmail_Test1"));
         }
 
         [HttpGet]

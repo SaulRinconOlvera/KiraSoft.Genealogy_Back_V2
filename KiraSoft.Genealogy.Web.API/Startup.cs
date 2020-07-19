@@ -25,13 +25,13 @@ namespace KiraSoft.Genealogy.Web.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options => { });
+
             services.AddSwaggerGen(AddSwagger());
             services.AddLogging(o => o.AddSerilog(Program.Logger));
 
             Utilities.Token.Configure.ConfigureJWT(services, Configuration);
             RegisterServices.Register(services, Configuration);
-            MailerRegister.Register(Configuration);
         }
 
         private Action<SwaggerGenOptions> AddSwagger()
