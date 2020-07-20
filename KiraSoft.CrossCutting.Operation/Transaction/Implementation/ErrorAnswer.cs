@@ -7,21 +7,26 @@ namespace KiraSoft.CrossCutting.Operation.Transaction.Implementation
 {
     public class ErrorAnswer<T> : IErrorAnswer<T> where T : class
     {
-        public ErrorAnswer(string message) { Message = message; PayLoad = null; }
+        public ErrorAnswer(string message) { 
+            Message = message; PayLoad = null;
+            ErrorList = new List<ErrorViewModel>();
+        }
 
         [JsonConstructor]
-        private ErrorAnswer() { }
+        private ErrorAnswer() { ErrorList = new List<ErrorViewModel>(); }
         
         public ErrorAnswer(T payload)
         {
             PayLoad = payload;
             Message = "Error at processing request.";
+            ErrorList = new List<ErrorViewModel>();
         }
 
         public ErrorAnswer(string message, T payload)
         {
             PayLoad = payload;
             Message = message;
+            ErrorList = new List<ErrorViewModel>();
         }
 
         public ErrorAnswer(string message, T payload, Exception ex)
@@ -44,7 +49,7 @@ namespace KiraSoft.CrossCutting.Operation.Transaction.Implementation
         public T PayLoad { get; set; }
 
         [JsonProperty("errorList")]
-        public IList<ErrorViewModel> ErrorList { get; set; }
+        public IList<ErrorViewModel> ErrorList { get; private set; }
 
         private void ProcessException(Exception ex)
         {

@@ -6,7 +6,6 @@ using Serilog.Events;
 using Serilog.Exceptions;
 using Serilog.Exceptions.Core;
 using Serilog.Exceptions.MsSqlServer.Destructurers;
-using Serilog.Sinks.MSSqlServer.Sinks.MSSqlServer.Options;
 using System;
 using System.IO;
 
@@ -25,15 +24,6 @@ namespace KiraSoft.Genealogy.Web.API
 
         public static int Main(string[] args)
         {
-            //Logger = Log.Logger = new LoggerConfiguration()
-            //    .MinimumLevel.Debug()
-            //    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-            //    .WriteTo
-            //    .MSSqlServer(
-            //        connectionString: Configuration["ConnectionStrings:Genealogy"],
-            //        sinkOptions: new SinkOptions { TableName = "Genealogy_DataLog", AutoCreateSqlTable = true })
-            //    .CreateLogger();
-
             Logger = Log.Logger = new LoggerConfiguration()
                .MinimumLevel.Debug()
                .Enrich.WithExceptionDetails()

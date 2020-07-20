@@ -3,7 +3,6 @@ using KiraSoft.Application.Services.Indentity.Contracts;
 using KiraSoft.CrossCutting.Jobs;
 using KiraSoft.CrossCutting.Mailer.Enum;
 using KiraSoft.CrossCutting.Mailer.Message;
-using KiraSoft.CrossCutting.Mailer.Sender;
 using KiraSoft.CrossCutting.Mailer.Sender.Contracts;
 using KiraSoft.CrossCutting.Operation.Executor;
 using KiraSoft.Genealogy.Web.API.Controllers;
@@ -33,8 +32,6 @@ namespace KiraSoft.Genealogy.Web.API.Areas.Authentication.Controllers
         [HttpPost]
         public async Task<IActionResult> UserRegister([FromBody] UserRegisterViewModel viewModel)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-
             async Task<UserViewModel> predicate() =>
                 await _service.ReguisterAsync(viewModel);
 

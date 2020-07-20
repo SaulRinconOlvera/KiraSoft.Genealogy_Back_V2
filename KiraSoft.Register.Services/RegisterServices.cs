@@ -12,7 +12,6 @@ namespace KiraSoft.Register.Services
 {
     public static class RegisterServices
     {
-
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {
             MapperServices.Register(services);
